@@ -1,0 +1,61 @@
+{
+    "nav" : {
+      "home": "Home",
+      "projects": "Projects",
+      "about-me": "About me",
+      "stack":"Stack of Tecnologies"
+    },
+    "profile": {
+      "presentation-name" : "Hi! My name is",
+      "presentation": "I am a Front-end developer eager to apply my knowledge and continue learning!",
+      "cvBtn": "Download CV",
+      "contactBtn": "Contact Me Via Email Here!",
+      "about-me-title" : "ABOUT ME",
+      "about-me": "My name is Christian Gonzalez, I am 23 years old, and I am originally from Santa Fe, Argentina. Currently, I am studying frontend web development, and my goal is to become a fullstack developer. I enjoy every learning experience and appreciate being part of this beautiful community where I've found many talented peers. I am someone who likes to take on new challenges, feels ready to work in a company, and always gives my best to help.",
+      "stack-title":"MY STACK",
+      "projects-title" : "PROJECTS"
+    },
+    "projects": {
+      "project-title1": "NIKE CLONE",
+      "project-description1": "A project that I will modify in my own way, allowing me to apply my knowledge in web development, database, and design. It is being developed using Tailwind, Typescript, and React.",
+      "tecnologies1": "Technologies and Tools Used:",
+  
+      "project-title2": "ANCORA CONSTRUCTION COMPANY",
+      "project-description2": "Despite being in full development, my experience as a freelancer with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality using technologies such as Bootstrap, HTML, CSS, and JavaScript.",
+      "tecnologies2": "Technologies and Tools Used:",
+  
+      "project-title3": "INSIDE COACHING",
+      "project-description3": "Landing page created for a client with a coaching academy built in WordPress. Developed with the Tic's con Alas Empresa Jr team, we handled UI/UX development and prototyping in Adobe XD, following the Scrum methodology.",
+      "tecnologies3": "Technologies and Tools Used:",
+  
+      "project-title4": "ALAS JR ENTERPRISE",
+      "project-description4": "Website for Alas responsible for maintenance and updates. Along with my colleagues, we perform updates when required and necessary, in addition to being developers for companies and SMEs looking to take their business to the next level.",
+      "tecnologies4": "Technologies and Tools Used:"
+    },
+    "more-projects": {
+      "little-project-title1": "React Calculator",
+      "little-project-description1": "Calculator built using React that allowed me to understand concepts like 'useState'. Learning to manage states and dynamically update the user interface in response to user interactions.",
+  
+      "little-project-title2": "Weather App",
+      "little-project-description2": "I developed this weather application using JavaScript. The app provides accurate data and updated forecasts. Through this development, I gained new web development skills.",
+  
+      "little-project-title3": "GitHub Explorer",
+      "little-project-description3": "This app allows you to discover profiles of developers and interesting projects in the GitHub community. It also provides updated information about their repositories.",
+  
+      "little-project-title4": "English Dictionary",
+      "little-project-description4": "This app provides dictionary functionalities but in English, using the consumption of an API to reinforce knowledge.",
+  
+      "little-project-title5": "Poke Card",
+      "little-project-description5": "This app allows you to search for your favorite Pokémon!! A frontend mentor challenge, I love these challenges!",
+  
+      "little-project-title6": "Movie Search",
+      "little-project-description6": "This page allows you to search for the movie you want and see its statistics, reviews, and ratings! Go ahead and look for one!",
+  
+      "little-project-title7": "City Buses",
+      "little-project-description7": "I created this page for my partner who didn't know the bus routes. It is very useful as there is no well-structured page of this kind for the bus lines in my country, maybe it will be helpful if you're in Santa Fe!",
+  
+      "little-project-title8": "TO-DO LIST",
+      "little-project-description8": "This was my first To-Do List. I keep it as a memory and achievement. It might be something simple, but it has its time."
+    }
+  }
+  

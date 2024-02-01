@@ -1,0 +1,70 @@
+{
+    "nav" : {
+      "home": "Inicio",
+      "projects": "Proyectos",
+      "about-me": "Sobre Mi",
+      "stack":"Mi Stack Tecnologico"
+    },
+  "profile": {
+    "presentation-name" : "Hola! Mi nombre es",
+    "presentation" : "Soy un desarrollador Front-end con ganas de aplicar mis conocimientos y seguir aprendiendo!",
+    "cvBtn" : "Descargar CV",
+    "contactBtn" : "Contactame Por Mail Aquí!" ,
+    "about-me-title" : "SOBRE MI",
+    "about-me" : "Me llamo Christian Gonzalez, tengo 23 años y soy oriundo de Santa Fe, Argentina. Actualmente estoy estudiando el desarrollo web frontend y mi objetivo es convertirme en un fullstack, disfruto de cada aprendizaje y de esta comunidad hermosa en la que encontre muchos compañeros muy buenos. Soy una persona que le gusta afrontar nuevos retos, que siente que esta lista para trabajar en una empresa y que siempre va a dar todo para ayudar.",
+    "stack-title":"MI STACK",
+    "projects-title" : "PROYECTOS"
+
+
+
+    },
+    "projects": {
+        "project-title1": "NIKE CLON",
+        "project-description1" : "Un proyecto que modificaré a mi manera y me permitirá aplicar conocimientos en desarrollo web, base de datos y diseño para llevarlo a cabo se está utilizando Tailwind, Typescrip y React.",
+        "tecnologies1": "Tecnologias y Herramientas utilizadas:",
+
+        "project-title2": "ANCORA EMPRESA CONSTRUCTORA",
+        "project-description2" : "A pesar de estar en pleno desarrollo, mi experiencia como freelance con Ancora me permitió aplicar mis conocimientos en desarrollo web y trabajar en estrecha colaboración con un equipo para mejorar su presencia en línea y funcionalidad mediante el uso de tecnologías como Bootstrap, HTML, CSS y JavaScript.",
+        "tecnologies2": "Tecnologias y Herramientas utilizadas:",
+
+        "project-title3": "INSIDE COACHING",
+        "project-description3" : "Landing page realizada para un cliente con una academia de coachingrealizada en wordpress y desarrollada junto el equipo de Tic's con Alas Empresa Jr, junto con mis compañeros realizamos el desarrollo UI/UX y prototipado en adobe xd y trabajamos con metodologia Scrum.",
+        "tecnologies3": "Tecnologias y Herramientas utilizadas:",
+
+        "project-title4": "ALAS EMPRESA JR",
+        "project-description4" : "Pagina de Alas encargados del mantenimiento y actualizacion, junto con mis compañeros realizamos actualizaciones cuando se requiera y sea necesario, además de ser los desarrolladores de empresas y pymes que quieran llevar su empresa al proximo nivel.",
+        "tecnologies4": "Tecnologias y Herramientas utilizadas:"
+    },
+
+    "more-projects" : {
+        "little-project-title1": "Calculadora React",
+        "little-project-description1" : "Calculadora utilizando React que me permitió comprender conceptos como 'useState'. Aprendiendo a manejar estados y actualizar dinámicamente la interfaz de usuario en respuesta a las interacciones del usuario.",
+
+
+        "little-project-title2": "Clima App",
+        "little-project-description2" : "Desarrolle esta aplicación de clima utilizando JavaScript. La app ofrece datos precisos y pronósticos actualizados. A través de este desarrollo aprendí nuevas habilidades de desarrollo web.",
+
+        "little-project-title3": "Buscador de Github",
+        "little-project-description3" : "Esta app te permite descubrir perfiles de desarrolladores y proyectos interesantes en la comunidad GitHub, Ademas ofrece informacion actualizada de sus repositorios." ,
+
+        "little-project-title4": "Diccionario Ingles",
+        "little-project-description4" : "Esta app te permite las funcionalidades de un diccionario pero en ingles utilizando el consumo de una API para poder afianzar conocimientos.",
+
+        "little-project-title5": "Poke Card",
+        "little-project-description5" : "Esta app te permite buscar tu pokemón favorito!! desafio de frontend mentor, me encantan estos desafios!" ,
+
+        "little-project-title6": "Buscador de peliculas",
+        "little-project-description6" : "Esta pagina te permite buscar la pelicula que desees y ver sus estadisticas, reseñas y puntuaciones!, animate a buscar alguna!" ,
+
+        "little-project-title7": "Colectivos de mi Ciudad",
+        "little-project-description7" : "Esta pagina la cree para mi pareja que no sabia las rutas de los colectivos es muy util ya que no existe una pagina bien estructurada de este estilo para la linea de colectivos de mi pais, tal vez sirva por si estas en Santa Fe!" ,
+
+        "little-project-title8": "TO-DO LIST",
+        "little-project-description8" : "Este fue mi primer To-Do List, lo tengo como un recuerdo y un logro, tal vez sea algo sencillo, pero ya tiene su tiempo." 
+
+
+
+        
+    }
+
+}
