@@ -1,8 +1,7 @@
 'use client'
 import Image from "next/image";
 import { MoonSvg, SunSvg } from "../../public/svg/svg";
-import { setDarkMode, setLightMode } from "@/redux/features/themeSlice";
-import { useDispatch, useSelector } from "react-redux";
+import { toggleMode } from "@/redux/features/themeSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
 
 
@@ -12,7 +11,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className={`active flex items-center justify-center h-24 bg-orange-500 ${theme}`}>
+      <header className={`active flex items-center justify-center h-24 ${theme === "light" ? "bg-orange-600 text-black" : "bg-gray-800 text-white"}`}>
         <button className="btnMobile" id="btnMobile"></button>
 
         <nav className="navbar flex m-3" id="nav">
@@ -73,7 +72,7 @@ export const Header = () => {
               <button
                 className="switch bg-blue-200 w-12 h-6 rounded-full border-none relative cursor-pointer flex items-center outline-none "
                 id="switch"
-                onClick={()=> {dispatch(setDarkMode())}}
+                onClick={()=> {dispatch(toggleMode())}}
               >
                 <span className="text-black text-base w-6 h-6 leading-6 block bg-white absolute right-0 shadow-sm transition 300 ease-in rounded-full">
                   {SunSvg}
