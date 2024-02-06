@@ -1,0 +1,43 @@
+.switch {
+    position: relative;
+    width: 48px;
+    height: 24px; 
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.switch.dark {
+    background-color: rgb(46, 46, 46);
+}
+
+.switch.light {
+    background-color: rgb(194, 165, 2);
+}
+
+.switch::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    background-color: #f1f1f1;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease; 
+}
+
+.switch.light::after {
+    transform: translateX(100%); /* Mueve el interruptor a la derecha al estado "light" */
+}
+
+/* Agrega un estilo cuando se activa el interruptor (cambia de dark a light) */
+.switch.active {
+    background-color: rgb(194, 165, 2);
+}
+
+.switch.active::after {
+    transform: translateX(100%); /* Mueve el interruptor a la derecha al estado "light" */
+}
