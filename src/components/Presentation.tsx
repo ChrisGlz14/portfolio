@@ -57,18 +57,27 @@ const Presentation = () => {
               width={200}
               height={200}
             />
-            <div className="contact">
+            <div className="contact flex justify-center gap-3 m-4">
               <a href="https://www.linkedin.com/in/chrisglz14" target="_blank">
-                <i className="fa-brands fa-linkedin"></i>
+                <i>
+                  <Image
+                  className="bg-gray-950 rounded-md"
+                    src="./svg/linkedin-svg.svg"
+                    alt="Linkedin"
+                    width={50}
+                    height={50}
+                  />
+                </i>
               </a>
               <a href="https://github.com/ChrisGlz14" target="_blank">
-                <i className="fa-brands fa-square-github"></i>
-              </a>
-              <a
-                href="https://api.whatsapp.com/send?phone=3425933218"
-                target="_blank"
-              >
-                <i className="fa-brands fa-square-whatsapp"></i>
+                <i>
+                <Image
+                    src="./svg/github.svg"
+                    alt="github"
+                    width={50}
+                    height={50}
+                  />
+                </i>
               </a>
             </div>
           </aside>
