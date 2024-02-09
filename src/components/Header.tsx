@@ -24,7 +24,7 @@ export const Header = () => {
           theme === "light"
             ? "bg-orange-600 text-black"
             : "bg-gray-800 text-white"
-        } ${menu === "" ? "pb-14" : "" }`}
+        } ${menu === "" ? "pb-14 lg:pb-0" : "" }`}
       >
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <div className="logo">
@@ -59,7 +59,7 @@ export const Header = () => {
         >
           <div className="text-base lg:flex-grow">
             <ul className="lg:flex gap-10 justify-center  align-middle">
-              <li className="mt-5 md:mt-0">
+              <li className="mt-5 lg:mt-0">
                 <a
                   href="#"
                   className={`links  ${
@@ -74,7 +74,7 @@ export const Header = () => {
                   Home
                 </a>
               </li>
-              <li className="mt-5 md:mt-0">
+              <li className="mt-5 lg:mt-0">
                 <a
                   href="#"
                   className={`links  ${
@@ -89,7 +89,7 @@ export const Header = () => {
                   {data?.nav.projects}
                 </a>
               </li>
-              <li className="mt-5 md:mt-0">
+              <li className="mt-5 lg:mt-0">
                 <a
                   href="#"
                   className={`links  ${
@@ -104,7 +104,7 @@ export const Header = () => {
                   {data?.nav["about-me"]}
                 </a>
               </li>
-              <li className="mt-5 md:mt-0">
+              <li className="mt-5 lg:mt-0">
                 <a
                   href="#"
                   className={`links  ${
@@ -119,7 +119,7 @@ export const Header = () => {
                   {data?.nav.stack}
                 </a>
               </li>
-              <li className="flex justify-center mt-5 md:mt-0">
+              <li className="flex justify-center mt-5 lg:mt-0">
                 <button
                   className={`switch ${
                     btnState === "dark" ? "light" : "dark"
@@ -142,7 +142,7 @@ export const Header = () => {
                   </span>
                 </button>
               </li>
-              <li className="switch-lang flex gap-2 justify-center mt-5 md:mt-0">
+              <li className="switch-lang flex gap-2 justify-center mt-5 lg:mt-0">
                 <Image
                   className="links cursor-pointer"
                   id="flags"

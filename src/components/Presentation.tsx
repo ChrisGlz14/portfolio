@@ -14,7 +14,7 @@ const Presentation = () => {
     <>
       <section className="portfolio-container flex justify-start content-center sm:h-[815px]" id="home">
         <article className="flex-container flex flex-col m-auto items-center md:flex-row">
-          <section className="content-container flex flex-col pb-8 mx-9 justify-center items-center md:items-start">
+          <section className="content-container flex flex-col pb-8 md:pb-0 mx-9 justify-center items-center md:items-start">
             <header className="container-presentation text-center">
               <span data-section="profile" data-value="presentation-name" className="flex text-xl font-semibold text-start mt-2 text-[#a63929]" >
               {data?.profile['presentation-name']}
@@ -24,7 +24,7 @@ const Presentation = () => {
               <h1 className="text-center sm:text-start">Christian Gonzalez</h1>
             </section>
             <section className={`text-center md:text-start presentation-paragraph flex ${theme === 'light' ? "text-black" : "text-white"}`}>
-              <p data-section="profile" data-value="presentation">
+              <p data-section="profile" data-value="presentation" className="mt-8">
                 {data?.profile.presentation}
               </p>
             </section>
