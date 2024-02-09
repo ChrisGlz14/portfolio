@@ -41,3 +41,4 @@
 .switch.active::after {
     transform: translateX(100%); /* Mueve el interruptor a la derecha al estado "light" */
 }
+

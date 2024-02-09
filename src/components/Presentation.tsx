@@ -12,18 +12,18 @@ const Presentation = () => {
   
   return (
     <>
-      <section className="portfolio-container flex justify-start content-center h-[815px]" id="home">
-        <article className="flex-container flex m-auto items-center">
-          <section className="content-container flex flex-col mx-9">
+      <section className="portfolio-container flex justify-start content-center sm:h-[815px]" id="home">
+        <article className="flex-container flex flex-col m-auto items-center md:flex-row">
+          <section className="content-container flex flex-col pb-8 mx-9 justify-center items-center md:items-start">
             <header className="container-presentation text-center">
               <span data-section="profile" data-value="presentation-name" className="flex text-xl font-semibold text-start mt-2 text-[#a63929]" >
               {data?.profile['presentation-name']}
               </span>
             </header>
             <section className={`portfolio-name text-5xl font-semibold ${theme === 'light' ? "text-black" : "text-white" }`} >
-              <h1>Christian Gonzalez</h1>
+              <h1 className="text-center sm:text-start">Christian Gonzalez</h1>
             </section>
-            <section className={`presentation-paragraph text-center flex ${theme === 'light' ? "text-black" : "text-white"}`}>
+            <section className={`text-center md:text-start presentation-paragraph flex ${theme === 'light' ? "text-black" : "text-white"}`}>
               <p data-section="profile" data-value="presentation">
                 {data?.profile.presentation}
               </p>

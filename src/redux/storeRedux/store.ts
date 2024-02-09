@@ -2,13 +2,14 @@
 import { configureStore } from "@reduxjs/toolkit";
 import themeReducer from "../features/themeSlice";
 import langReducer from "../features/langSlice"
-
+import menuBurgerReducer from "../features/menuBurgerSlice";
 
 
 export const store = configureStore({
   reducer: {
     themeReducer,
-    langReducer
+    langReducer,
+    menuBurgerReducer,
   },
 });
 
