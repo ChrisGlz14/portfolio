@@ -16,21 +16,29 @@
       "projects-title" : "PROJECTS"
     },
     "projects": {
-      "project-title1": "NIKE CLONE",
-      "project-description1": "A project that I will modify in my own way, allowing me to apply my knowledge in web development, database, and design. It is being developed using Tailwind, Typescript, and React.",
+
+  
+      "project-title1": "ANCORA CONSTRUCTION COMPANY",
+      "project-description1": "Despite being in full development, my experience as a freelancer with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality using technologies such as Bootstrap, HTML, CSS, and JavaScript.",
       "tecnologies1": "Technologies and Tools Used:",
+      "tecnologiesIcon1": "FaHtml5,FaCss3Alt,IoLogoJavascript,FaBootstrap,SiAdobexd",
+      "img-path1": "/img/ancora.png",
+      "url1": "https://ancorasf.netlify.app/",
+
   
-      "project-title2": "ANCORA CONSTRUCTION COMPANY",
-      "project-description2": "Despite being in full development, my experience as a freelancer with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality using technologies such as Bootstrap, HTML, CSS, and JavaScript.",
+      "project-title2": "INSIDE COACHING",
+      "project-description2": "Landing page created for a client with a coaching academy built in WordPress. Developed with the Tic's con Alas Empresa Jr team, we handled UI/UX development and prototyping in Adobe XD, following the Scrum methodology.",
       "tecnologies2": "Technologies and Tools Used:",
+      "tecnologiesIcon2": "FaHtml5,SiAdobexd,FaWordpress",
+      "img-path2": "/img/inside-coachjign.png",
+      "url2": "https://insidecoaching.com.ar/",
   
-      "project-title3": "INSIDE COACHING",
-      "project-description3": "Landing page created for a client with a coaching academy built in WordPress. Developed with the Tic's con Alas Empresa Jr team, we handled UI/UX development and prototyping in Adobe XD, following the Scrum methodology.",
+      "project-title3": "ALAS JR ENTERPRISE",
+      "project-description3": "Website for Alas responsible for maintenance and updates. Along with my colleagues, we perform updates when required and necessary, in addition to being developers for companies and SMEs looking to take their business to the next level.",
       "tecnologies3": "Technologies and Tools Used:",
-  
-      "project-title4": "ALAS JR ENTERPRISE",
-      "project-description4": "Website for Alas responsible for maintenance and updates. Along with my colleagues, we perform updates when required and necessary, in addition to being developers for companies and SMEs looking to take their business to the next level.",
-      "tecnologies4": "Technologies and Tools Used:"
+      "tecnologiesIcon3": "FaHtml5,FaWordpress",
+      "img-path3": "/img/alas.png",
+      "url3": "https://www.alasempresajunior.com.ar/"
     },
     "more-projects": {
       "little-project-title1": "React Calculator",

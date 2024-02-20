@@ -1,7 +1,8 @@
 "use client";
+import { FaMoon } from "react-icons/fa";
+import { IoIosSunny } from "react-icons/io";
 import Image from "next/image";
 import "./header.css";
-import { MoonSvg, SunSvg } from "../../public/svg/svg";
 import { toggleMode } from "@/redux/features/themeSlice";
 import { setEn, setEs } from "@/redux/features/langSlice";
 import { toggleMenu } from "@/redux/features/menuBurgerSlice";
@@ -23,8 +24,8 @@ export const Header = () => {
         className={`flex items-center justify-between flex-wrap p-2 ${
           theme === "light"
             ? "bg-orange-600 text-black"
-            : "bg-gray-800 text-white"
-        } ${menu === "" ? "pb-14 lg:pb-0" : "" }`}
+            : "bg-gray-800 text-white" 
+        } ${menu === "" ? "pb-14 lg:pb-0" : ""}`}
       >
         <div className="flex items-center flex-shrink-0 text-white mr-6">
           <div className="logo">
@@ -33,7 +34,7 @@ export const Header = () => {
         </div>
         <div className="block lg:hidden">
           <button
-          onClick={()=>dispatch(toggleMenu())}
+            onClick={() => dispatch(toggleMenu())}
             id="boton"
             className={`flex items-center px-3 py-2 border rounded ${
               theme === "light"
@@ -119,25 +120,25 @@ export const Header = () => {
                   {data?.nav.stack}
                 </a>
               </li>
-              <li className="flex justify-center mt-5 lg:mt-0">
+              <li className="flex justify-center mt-5 lg:mt-0 items-center">
                 <button
                   className={`switch ${
                     btnState === "dark" ? "light" : "dark"
-                  } w-12 h-6 rounded-full border-none relative cursor-pointer flex items-center outline-none `}
+                  } w-12 h-6 rounded-full border-none relative cursor-pointer flex items-center justify-center outline-none `}
                   id="switch"
                   onClick={() => {
                     dispatch(toggleMode());
                   }}
                 >
-                  <span className="">
-                    <i className="text-black text-base w-6 h-6 leading-6 block bg-transparent absolute left-0 top-0 shadow-sm transition 300 ease-in rounded-full">
-                      {SunSvg}
+                  <span className="leading-8">
+                    <i >
+                      <IoIosSunny className="text-white text-xl leading-6 block bg-transparent absolute left-0 top-0 shadow-sm transition 300 ease-in rounded-full"/>
                     </i>
                   </span>
 
-                  <span className="">
-                    <i className="text-black text-base w-6 h-6 leading-6 block bg-transparent absolute right-0 top-0 shadow-sm transition 300 ease-in rounded-full">
-                      {MoonSvg}
+                  <span className="leading-8">
+                    <i >
+                      <FaMoon className="text-white text-xl leading-6 block bg-transparent absolute right-0 top-0 shadow-sm transition 300 ease-in rounded-full"/>
                     </i>
                   </span>
                 </button>
@@ -173,7 +174,6 @@ export const Header = () => {
           </div>
         </div>
       </nav>
-
     </>
   );
 };

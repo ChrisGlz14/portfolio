@@ -1,4 +1,6 @@
 import { useAppSelector } from "@/redux/hook";
+import { FaLinkedin } from "react-icons/fa6";
+import { FaGithubSquare } from "react-icons/fa";
 import Image from "next/image";
 import * as dataEn from '../app/lib/languages/en.json' //Forma de importar todos los datos del archivo JSON con ts
 import * as dataEs from '../app/lib/languages/es.json'
@@ -54,29 +56,19 @@ const Presentation = () => {
               className="rounded-full border-4 border-orange-600"
               src="/img/christian.jpg"
               alt="Chris"
+              priority={true}
               width={200}
               height={200}
             />
             <div className="contact flex justify-center gap-3 m-4">
               <a href="https://www.linkedin.com/in/chrisglz14" target="_blank">
                 <i>
-                  <Image
-                  className="bg-gray-950 rounded-md"
-                    src="./svg/linkedin-svg.svg"
-                    alt="Linkedin"
-                    width={50}
-                    height={50}
-                  />
+                  <FaLinkedin className="text-5xl text-[#0e76a8] duration-200 hover:text-red-500" />
                 </i>
               </a>
               <a href="https://github.com/ChrisGlz14" target="_blank">
                 <i>
-                <Image
-                    src="./svg/github.svg"
-                    alt="github"
-                    width={50}
-                    height={50}
-                  />
+                  <FaGithubSquare className="text-5xl text-[#0e76a8] duration-200 hover:text-red-500" />
                 </i>
               </a>
             </div>

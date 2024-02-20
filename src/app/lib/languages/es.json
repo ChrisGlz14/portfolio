@@ -19,21 +19,27 @@
 
     },
     "projects": {
-        "project-title1": "NIKE CLON",
-        "project-description1" : "Un proyecto que modificaré a mi manera y me permitirá aplicar conocimientos en desarrollo web, base de datos y diseño para llevarlo a cabo se está utilizando Tailwind, Typescrip y React.",
+
+        "project-title1": "ANCORA EMPRESA CONSTRUCTORA",
+        "project-description1" : "A pesar de estar en pleno desarrollo, mi experiencia como freelance con Ancora me permitió aplicar mis conocimientos en desarrollo web y trabajar en estrecha colaboración con un equipo para mejorar su presencia en línea y funcionalidad mediante el uso de tecnologías como Bootstrap, HTML, CSS y JavaScript.",
         "tecnologies1": "Tecnologias y Herramientas utilizadas:",
+        "tecnologiesIcon1": "FaHtml5,FaCss3Alt,IoLogoJavascript,FaBootstrap,SiAdobexd",
+        "img-path1" : "/img/ancora.png",
+        "url1" : "https://ancorasf.netlify.app/",
 
-        "project-title2": "ANCORA EMPRESA CONSTRUCTORA",
-        "project-description2" : "A pesar de estar en pleno desarrollo, mi experiencia como freelance con Ancora me permitió aplicar mis conocimientos en desarrollo web y trabajar en estrecha colaboración con un equipo para mejorar su presencia en línea y funcionalidad mediante el uso de tecnologías como Bootstrap, HTML, CSS y JavaScript.",
+        "project-title2": "INSIDE COACHING",
+        "project-description2" : "Landing page realizada para un cliente con una academia de coachingrealizada en wordpress y desarrollada junto el equipo de Tic's con Alas Empresa Jr, junto con mis compañeros realizamos el desarrollo UI/UX y prototipado en adobe xd y trabajamos con metodologia Scrum.",
         "tecnologies2": "Tecnologias y Herramientas utilizadas:",
+        "tecnologiesIcon2": "FaHtml5,SiAdobexd,FaWordpress",
+        "img-path2" : "/img/inside-coachjign.png",
+        "url2" : "https://insidecoaching.com.ar/",
 
-        "project-title3": "INSIDE COACHING",
-        "project-description3" : "Landing page realizada para un cliente con una academia de coachingrealizada en wordpress y desarrollada junto el equipo de Tic's con Alas Empresa Jr, junto con mis compañeros realizamos el desarrollo UI/UX y prototipado en adobe xd y trabajamos con metodologia Scrum.",
+        "project-title3": "ALAS EMPRESA JR",
+        "project-description3" : "Pagina de Alas encargados del mantenimiento y actualizacion, junto con mis compañeros realizamos actualizaciones cuando se requiera y sea necesario, además de ser los desarrolladores de empresas y pymes que quieran llevar su empresa al proximo nivel.",
         "tecnologies3": "Tecnologias y Herramientas utilizadas:",
-
-        "project-title4": "ALAS EMPRESA JR",
-        "project-description4" : "Pagina de Alas encargados del mantenimiento y actualizacion, junto con mis compañeros realizamos actualizaciones cuando se requiera y sea necesario, además de ser los desarrolladores de empresas y pymes que quieran llevar su empresa al proximo nivel.",
-        "tecnologies4": "Tecnologias y Herramientas utilizadas:"
+        "tecnologiesIcon3": "FaHtml5,FaWordpress",
+        "img-path3" : "/img/alas.png",
+        "url3" : "https://www.alasempresajunior.com.ar/"
     },
 
     "more-projects" : {
@@ -41,7 +47,7 @@
         "little-project-description1" : "Calculadora utilizando React que me permitió comprender conceptos como 'useState'. Aprendiendo a manejar estados y actualizar dinámicamente la interfaz de usuario en respuesta a las interacciones del usuario.",
 
 
-        "little-project-title2": "Clima App",
+        "little-project-1": "Clima App",
         "little-project-description2" : "Desarrolle esta aplicación de clima utilizando JavaScript. La app ofrece datos precisos y pronósticos actualizados. A través de este desarrollo aprendí nuevas habilidades de desarrollo web.",
 
         "little-project-title3": "Buscador de Github",
