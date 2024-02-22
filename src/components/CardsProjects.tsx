@@ -36,11 +36,11 @@ interface CardsProjectsProps {
   
   return (
         <>
-            <div className="proyectos-container flex flex-row mx-auto w-[1033px] h-auto justify-center bg-transparent mt-32 ">
+            <div className="proyectos-container flex flex-col lg:flex-row mx-auto w-[300px] lg:w-[1033px] h-auto justify-center bg-transparent mt-32 ">
                 <a href={url}  target="_blank"  className='items-center flex justify-center box-border' >
-                    <Image className="img-proyectos border-2 border-red-600 object-cover h-[200px] w-[500px]" src={img} alt="ancora" width={450} height={202} />
+                    <Image className="img-proyectos border-2 border-red-600 object-cover mb-3 lg:mb-0 h-[200px] w-[500px]" src={img} alt="ancora" width={450} height={202} />
                 </a>
-                <div className="card-container flex-grow-0 w-3/4 ml-12">
+                <div className="card-container flex-grow-0 w-[300px] lg:w-3/4 lg:ml-12">
                     <div className="header-container flex items-center justify-between mb-5 ">
                         <h3 data-section ="projects" data-value ="project-title2" className={`${theme === "light" ? "text-black" : "text-white"}`}>{title}</h3>
                         <div className={`icons flex justify-end gap-2 ${theme === "light" ? "text-black" : "text-white"}`}>
@@ -54,10 +54,10 @@ interface CardsProjectsProps {
                             </a>
                         </div>
                     </div>
-                    <p className={`description-card min-w-80 mb-9 ${theme === "light" ? "text-black" : "text-white"}`} data-section ="projects" data-value ="project-description2">
+                    <p className={`description-card min-w-72 lg:min-w-80 mb-9 tracking-wide ${theme === "light" ? "text-black" : "text-white"}`} data-section ="projects" data-value ="project-description2">
                         {description}
                     </p>
-                    <div className="footer-card flex items-center mt-12 justify-between">
+                    <div className="footer-card flex flex-col lg:flex-row text-center items-center mt-12 justify-between">
                         <h3 data-section ="projects" data-value ="tecnologies2" className={`${theme === "light" ? "text-black" : "text-white"}`}>{tecnologies}</h3>
                         <div className={`footer-icons justify-center flex gap-2 ${theme === "light" ? "text-black" : "text-white"}`}>
                         {tecnologiesIcon.map((iconName, index) => {  //Recorremos el arreglo tecnologiesIcon. INDEX ES LA POSICION Y ICONNAME ES EL VALOR.

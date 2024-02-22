@@ -121,27 +121,26 @@ export const Header = () => {
                 </a>
               </li>
               <li className="flex justify-center mt-5 lg:mt-0 items-center">
-                <button
-                  className={`switch ${
-                    btnState === "dark" ? "light" : "dark"
-                  } w-12 h-6 rounded-full border-none relative cursor-pointer flex items-center justify-center outline-none `}
-                  id="switch"
-                  onClick={() => {
-                    dispatch(toggleMode());
-                  }}
-                >
-                  <span className="leading-8">
-                    <i >
-                      <IoIosSunny className="text-white text-xl leading-6 block bg-transparent absolute left-0 top-0 shadow-sm transition 300 ease-in rounded-full"/>
-                    </i>
-                  </span>
+              <button
+  className={`switch ${btnState === "dark" ? "light" : "dark"} w-12 h-6 rounded-full border-none relative cursor-pointer outline-none`}
+  id="switch"
+  onClick={() => {
+    dispatch(toggleMode());
+  }}
+>
+  <span className="absolute left-[2px] top-1/2 transform -translate-y-1/2">
+    <i>
+      <IoIosSunny className="text-white text-xl leading-6 block bg-transparent shadow-sm transition 300 ease-in rounded-full" />
+    </i>
+  </span>
 
-                  <span className="leading-8">
-                    <i >
-                      <FaMoon className="text-white text-xl leading-6 block bg-transparent absolute right-0 top-0 shadow-sm transition 300 ease-in rounded-full"/>
-                    </i>
-                  </span>
-                </button>
+  <span className="absolute right-[2px] top-1/2 transform -translate-y-1/2">
+    <i>
+      <FaMoon className="text-white text-lg leading-6 block bg-transparent shadow-sm transition 300 ease-in rounded-full" />
+    </i>
+  </span>
+</button>
+
               </li>
               <li className="switch-lang flex gap-2 justify-center mt-5 lg:mt-0">
                 <Image

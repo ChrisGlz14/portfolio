@@ -9,19 +9,19 @@ const Stack = () => {
   return (
     <>
     <h2 data-section="profile" className='text-3xl text-center mt-32 mb-24'>STACK</h2> 
-    <div className='grid grid-cols-4 gap-4 justify-items-center items-center flex-wrap w-[700px] mx-auto pb-20'>
+    <div className='grid grid-cols-3 md:grid-cols-3 gap-1 md:justify-items-center md:items-center flex-wrap w-[250px]  sm:w-[700px] mx-auto pb-20'>
       <FaHtml5 className="text-7xl text-orange-500" />
       <FaCss3Alt className="text-7xl text-blue-500" />
       <FaJs className="text-7xl text-yellow-500" />
       <FaReact className="text-7xl text-cyan-500" />
-      <TbBrandNextjs className="text-7xl text-gray-900" />
-      <FaBootstrap className="text-7xl text-purple-500" />
-      <FaWordpress className="text-7xl text-blue-500" />
       <FaGithub className="text-7xl text-purple-500" />
+      <TbBrandNextjs className="text-7xl text-gray-900" />
+      <SiTailwindcss className="text-7xl text-sky-500" />
       <FaGit className="text-7xl text-black" />
+      <FaWordpress className="text-7xl text-blue-500" />
       <FaSass className="text-7xl text-pink-500" />
       <FaFigma className="text-7xl text-pink-500" />
-      <SiTailwindcss className="text-7xl text-sky-500" />
+      <FaBootstrap className="text-7xl text-purple-500" />
     </div>
     </>
   )
