@@ -1,4 +1,5 @@
-import React from "react";
+
+import React, { use } from "react";
 import CardSkeleton from "@/app/ui/skeletons";
 
 export default function Loading() {

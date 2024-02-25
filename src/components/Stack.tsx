@@ -2,13 +2,17 @@ import React from 'react'
 import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaGithub,FaGit,FaSass,FaFigma,FaJs} from "react-icons/fa"; 
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiTailwindcss } from "react-icons/si";
+import { useAppSelector } from '@/redux/hook';
 
 
 
 const Stack = () => {
+  
+  const theme = useAppSelector(state => state.themeReducer.mode)
+  
   return (
     <>
-    <h2 data-section="profile" className='text-3xl text-center mt-32 mb-24'>STACK</h2> 
+    <h2 data-section="profile" className={`text-3xl text-center mt-32 mb-24 ${theme === "light" ? "text-black" : "text-white"}`}>STACK</h2> 
     <div className='grid grid-cols-3 md:grid-cols-3 gap-1 md:justify-items-center md:items-center flex-wrap w-[250px]  sm:w-[700px] mx-auto pb-20'>
       <FaHtml5 className="text-7xl text-orange-500" />
       <FaCss3Alt className="text-7xl text-blue-500" />
@@ -25,6 +29,7 @@ const Stack = () => {
     </div>
     </>
   )
+  
 }
 
 export default Stack

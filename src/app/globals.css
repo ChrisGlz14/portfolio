@@ -13,11 +13,11 @@
 }
 
 body .dark {
-background:#1f1d2b;
+  background:#1f1d2b;
 }
 
 body .light {
-background-color: antiquewhite;
+  background-color: antiquewhite;
 }
 
 @layer utilities {
@@ -25,6 +25,7 @@ background-color: antiquewhite;
     text-wrap: balance;
   }
 }
+
 
 /* Estilos generales de Tailwind */
 

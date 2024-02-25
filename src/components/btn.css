@@ -1,0 +1,35 @@
+.up-btn-show {
+    animation: popup 0.3s ease-in-out;
+} 
+
+.up-btn-hide {
+    animation: hiden 0.3s ease-in;
+}
+
+
+@keyframes popup {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 8rem;
+      height: 8rem;
+    }
+    100% {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+
+  @keyframes hiden {
+    from {
+      opacity: 100;
+      transform: scale(100%);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0%);
+    }
+  }

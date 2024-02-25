@@ -42,7 +42,7 @@ export const BestProjects = () => {
     <>
       {projects.map((project, index) => {
         return (
-          <CardsProjects
+          <CardsProjects 
             key={index}
             title={project.title}
             description={project.description}

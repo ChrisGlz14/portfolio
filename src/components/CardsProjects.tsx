@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiRocket2Line } from "react-icons/ri";
 import { VscGithub } from "react-icons/vsc";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress  } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaLink  } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiAdobexd } from "react-icons/si";
 import Image from 'next/image';
@@ -37,9 +37,20 @@ interface CardsProjectsProps {
   return (
         <>
             <div className="proyectos-container flex flex-col lg:flex-row mx-auto w-[300px] lg:w-[1033px] h-auto justify-center bg-transparent mt-32 ">
-                <a href={url}  target="_blank"  className='items-center flex justify-center box-border' >
-                    <Image className="img-proyectos border-2 border-red-600 object-cover mb-3 lg:mb-0 h-[200px] w-[500px]" src={img} alt="ancora" width={450} height={202} />
-                </a>
+                <div className="container-img flex justify-center items-center">
+                    <div className="hover-img group relative justify-center items-center">
+                        <div className="hover:filter hover:brightness-50 transition-all ease-in-out duration-300 flex justify-center items-center">
+                            <a href={url} target="_blank" className='items-center flex justify-center box-border'>
+                                <Image className="img-proyectos border-2 border-red-600 object-cover mb-3 lg:mb-0 h-[200px] w-[500px]" src={img} alt="ancora" width={450} height={202} />
+                            </a>
+                            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <a href={url} target='_blank' className='text-white brightness-200'>
+                                    <FaLink className="text-7xl text-cyan-50 brightness-150 cursor-pointer " />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div className="card-container flex-grow-0 w-[300px] lg:w-3/4 lg:ml-12">
                     <div className="header-container flex items-center justify-between mb-5 ">
                         <h3 data-section ="projects" data-value ="project-title2" className={`${theme === "light" ? "text-black" : "text-white"}`}>{title}</h3>

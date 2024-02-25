@@ -1,5 +1,7 @@
 import CardSkeleton from "@/app/ui/skeletons";
-import React, { Suspense, useEffect, useState } from "react";
+import langSlice from "@/redux/features/langSlice";
+import { useAppSelector } from "@/redux/hook";
+import React, { useEffect, useState } from "react";
 
 interface Repo {
   id: number;
@@ -11,6 +13,8 @@ interface Repo {
 
 const url = "https://api.github.com/users/ChrisGlz14/repos";
 const Repos = () => {
+  const theme = useAppSelector((state)=> state.themeReducer.mode)
+  const language = useAppSelector((state) => state.langReducer.mode);
   const [repos, setRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true); 
 
@@ -41,16 +45,16 @@ const Repos = () => {
   if (loading) {
     return (
       <>
-      <h1 className="text-3xl text-center mt-44">MIS REPOSITORIOS</h1>
+      <h1 className="text-3xl text-center mt-44">{ language == "es" ? "MIS REPOSITORIOS" : "MY REPOSITORIES"}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
-      <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
+        <CardSkeleton />
       </div>
       </>
     ); // Muestra el esqueleto mientras se está cargando
@@ -58,18 +62,18 @@ const Repos = () => {
 
   return (
     <>
-      <h1 className="text-3xl text-center mt-44">MIS REPOSITORIOS</h1>
+      <h1 className={`text-3xl text-center mt-44 ${theme === "light" ? "text-black" : "text-white"}`}>{ language == "es" ? "MIS REPOSITORIOS" : "MY REPOSITORIES"}</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 justify-items-center">
         {repos.map((repo) => (
           <div
             key={repo.id}
             className="w-[20rem] h-[16rem] mt-10 p-6 flex flex-col justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <a href="#">
+            <p className="xl:text-lg">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {repo.name ? repo.name : repo.create_at}
               </h5>
-            </a>
+            </p>
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               {repo.description}
             </p>
