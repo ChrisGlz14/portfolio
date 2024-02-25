@@ -2,6 +2,7 @@
     "nav" : {
       "home": "Home",
       "projects": "Projects",
+      "repositories": "Repositories",
       "about-me": "About me",
       "stack":"Stack of Tecnologies"
     },

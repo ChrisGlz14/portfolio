@@ -7,6 +7,7 @@ import { toggleMode } from "@/redux/features/themeSlice";
 import { setEn, setEs } from "@/redux/features/langSlice";
 import { toggleMenu } from "@/redux/features/menuBurgerSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
+import { scrollHome, scrollProjects, scrollRepos, scrollStack } from "../app/scroll-functions/scrolls";
 import * as dataEn from "../app/lib/languages/en.json";
 import * as dataEs from "../app/lib/languages/es.json";
 
@@ -71,6 +72,7 @@ export const Header = () => {
                   id="nav-home"
                   data-section="nav"
                   data-value="home"
+                  onClick={() => scrollHome()}
                 >
                   Home
                 </a>
@@ -86,6 +88,7 @@ export const Header = () => {
                   id="nav-projects"
                   data-section="nav"
                   data-value="projects"
+                  onClick={() => scrollProjects()}
                 >
                   {data?.nav.projects}
                 </a>
@@ -99,10 +102,11 @@ export const Header = () => {
                       : "text-white hover:text-yellow-300"
                   }`}
                   id="nav-about-me"
-                  data-section="nav"
+                  data-section="repos"
                   data-value="about-me"
+                  onClick={() => scrollRepos()}
                 >
-                  {data?.nav["about-me"]}
+                  {data?.nav["repositories"]}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
@@ -116,6 +120,7 @@ export const Header = () => {
                   id="nav-stack"
                   data-section="nav"
                   data-value="stack"
+                  onClick={() => scrollStack()}
                 >
                   {data?.nav.stack}
                 </a>

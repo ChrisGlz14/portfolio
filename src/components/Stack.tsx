@@ -12,7 +12,7 @@ const Stack = () => {
   
   return (
     <>
-    <h2 data-section="profile" className={`text-3xl text-center mt-32 mb-24 ${theme === "light" ? "text-black" : "text-white"}`}>STACK</h2> 
+    <h2 data-section="stack" id='stack' className={`text-3xl text-center mt-32 mb-24 ${theme === "light" ? "text-black" : "text-white"}`}>STACK</h2> 
     <div className='grid grid-cols-3 md:grid-cols-3 gap-1 md:justify-items-center md:items-center flex-wrap w-[250px]  sm:w-[700px] mx-auto pb-20'>
       <FaHtml5 className="text-7xl text-orange-500" />
       <FaCss3Alt className="text-7xl text-blue-500" />

@@ -2,6 +2,7 @@
     "nav" : {
       "home": "Inicio",
       "projects": "Proyectos",
+      "repositories": "Repositorios",
       "about-me": "Sobre Mi",
       "stack":"Mi Stack Tecnologico"
     },
