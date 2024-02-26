@@ -101,9 +101,9 @@ export const Header = () => {
                       ? "text-white hover:text-black transition 300"
                       : "text-white hover:text-yellow-300"
                   }`}
-                  id="nav-about-me"
-                  data-section="repos"
-                  data-value="about-me"
+                  id="nav-repos"
+                  data-section="repositories"
+                  data-value="repositories"
                   onClick={() => scrollRepos()}
                 >
                   {data?.nav["repositories"]}
