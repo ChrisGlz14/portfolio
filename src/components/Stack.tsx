@@ -1,7 +1,7 @@
 import React from 'react'
-import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaGithub,FaGit,FaSass,FaFigma,FaJs} from "react-icons/fa"; 
+import { FaReact, FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaGithub,FaGit,FaSass,FaFigma,FaJs} from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiTailwindcss } from "react-icons/si";
+import { SiTailwindcss , SiTypescript, SiMysql } from "react-icons/si";
 import { useAppSelector } from '@/redux/hook';
 
 
@@ -26,6 +26,8 @@ const Stack = () => {
       <FaSass className="text-7xl text-pink-500" />
       <FaFigma className="text-7xl text-pink-500" />
       <FaBootstrap className="text-7xl text-purple-500" />
+      <SiTypescript className="text-7xl text-blue-500" />
+      <SiMysql className="text-7xl text-blue-500" />
     </div>
     </>
   )
