@@ -1,9 +1,10 @@
 import React from 'react';
 import { RiRocket2Line } from "react-icons/ri";
 import { VscGithub } from "react-icons/vsc";
-import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaLink  } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaLink, FaSass, FaFigma, FaJs, FaReact } from "react-icons/fa";
+import { TbBrandNextjs } from "react-icons/tb";
 import { IoLogoJavascript } from "react-icons/io5";
-import { SiAdobexd } from "react-icons/si";
+import { SiAdobexd,SiTypescript, SiMysql,SiTailwindcss } from "react-icons/si";
 import Image from 'next/image';
 import { useAppSelector } from "@/redux/hook";
 
@@ -31,12 +32,20 @@ interface CardsProjectsProps {
         IoLogoJavascript: <IoLogoJavascript />,
         FaBootstrap: <FaBootstrap />,
         SiAdobexd: <SiAdobexd />,
-        FaWordpress: <FaWordpress />  
+        FaReact: <FaReact />,
+        FaWordpress: <FaWordpress />,
+        FaSass: <FaSass />,
+        FaFigma: <FaFigma />,
+        FaJs: <FaJs />,
+        SiTypescript: <SiTypescript />,
+        SiMysql: <SiMysql />,
+        SiTailwindcss: <SiTailwindcss />,
+        TbBrandNextjs: <TbBrandNextjs />,
     }
   
   return (
         <>
-            <div className="proyectos-container flex flex-col lg:flex-row mx-auto w-[300px] lg:w-[1033px] h-auto justify-center bg-transparent mt-32 ">
+            <div className="proyectos-container flex flex-col lg:flex-row mx-auto w-[300px] lg:w-[1033px] h-auto justify-center bg-transparent mt-10 sm:mt-14">
                 <div className="container-img flex justify-center items-center">
                     <div className="hover-img group relative justify-center items-center">
                         <div className="hover:filter hover:brightness-50 transition-all ease-in-out duration-300 flex justify-center items-center">

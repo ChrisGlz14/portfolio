@@ -1,5 +1,3 @@
-import React from "react";
-import Image from "next/image";
 import { useAppSelector } from "@/redux/hook";
 import * as dataEn from "../app/lib/languages/en.json"; //Forma de importar todos los datos del archivo JSON con ts
 import * as dataEs from "../app/lib/languages/es.json";
@@ -10,7 +8,7 @@ interface ProjectData {
 }
 
 export const BestProjects = () => {
-  const language = useAppSelector((state) => state.langReducer.mode);
+  const language = useAppSelector((state:any) => state.langReducer.mode);
   const data: {
     projects: ProjectData;
   } = language === "es" ? dataEs : dataEn;
@@ -18,7 +16,7 @@ export const BestProjects = () => {
 
 
 
-  const numberOfProjects = 3;
+  const numberOfProjects = 4;
   
 
   const projects = Array.from(
@@ -50,7 +48,7 @@ export const BestProjects = () => {
             github={project.github}
             link={project.link}
             img={project.img}
-            tecnologiesIcon={project.tecnologiesIcon.split(",")}  
+            tecnologiesIcon={project.tecnologiesIcon.split(",").map(tech => tech.trim())}
             url={project.url}
           />
         );

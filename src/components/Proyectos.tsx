@@ -9,7 +9,7 @@ const Proyectos = () => {
 
   return (
     <>
-     <h2 data-section="projects" id='projects' className={`text-3xl text-center ${theme === "light" ? "text-black" : "text-white"}`}>{ language == "es" ? "PROYECTOS" : "PROJECTS"}</h2>
+     <h2 data-section="projects" id='projects' className={`text-3xl mt-28 sm:mt-24 text-center ${theme === "light" ? "text-black" : "text-white"}`}>{ language == "es" ? "PROYECTOS" : "PROJECTS"}</h2>
 
       <BestProjects />
     
