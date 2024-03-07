@@ -39,7 +39,14 @@
       "tecnologies3": "Technologies and Tools Used:",
       "tecnologiesIcon3": "FaHtml5,FaWordpress",
       "img-path3": "/img/alas.png",
-      "url3": "https://www.alasempresajunior.com.ar/"
+      "url3": "https://www.alasempresajunior.com.ar/",
+
+      "project-title4": "NIKE E-COMMERCE (DEVELOPING)",
+      "project-description4": "I created this website with the goal of simulating an e-commerce platform, aiming to enhance both interface and design while improving my skills in using Tailwind, Next.js, and React.",
+      "tecnologies4": "Technologies and Tools Used:",
+      "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
+      "img-path4": "/img/nike-page.png",
+      "url4": "https://e-commerce-nike-liart.vercel.app/"
     },
     "more-projects": {
       "little-project-title1": "React Calculator",

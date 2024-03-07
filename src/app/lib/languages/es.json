@@ -40,7 +40,14 @@
         "tecnologies3": "Tecnologias y Herramientas utilizadas:",
         "tecnologiesIcon3": "FaHtml5,FaWordpress",
         "img-path3" : "/img/alas.png",
-        "url3" : "https://www.alasempresajunior.com.ar/"
+        "url3" : "https://www.alasempresajunior.com.ar/",
+
+        "project-title4": "NIKE E-COMMERCE - EN DESARROLLO",
+        "project-description4": "Realice esta pagina con el objetivo de simular un E-commerce, ademas de mejorar con respecto al diseño de interfaces y diseño, mientras mejoro en el uso de tailwind, next y react.",
+        "tecnologies4": "Tecnologias y y Herramientas utilizadas:",
+        "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
+        "img-path4": "/img/nike-page.png",
+        "url4": "https://e-commerce-nike-liart.vercel.app/"
 
     },
 

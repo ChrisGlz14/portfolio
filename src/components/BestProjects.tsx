@@ -18,7 +18,7 @@ export const BestProjects = () => {
 
 
 
-  const numberOfProjects = 3;
+  const numberOfProjects = 4;
   
 
   const projects = Array.from(
@@ -50,7 +50,7 @@ export const BestProjects = () => {
             github={project.github}
             link={project.link}
             img={project.img}
-            tecnologiesIcon={project.tecnologiesIcon.split(",")}  
+            tecnologiesIcon={project.tecnologiesIcon.split(",").map(tech => tech.trim())}
             url={project.url}
           />
         );
