@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./styles/globals.css";
 import { poppins } from "./ui/fonts";
 import { Providers } from "@/redux/storeRedux/provider";
 

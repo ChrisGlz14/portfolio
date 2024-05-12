@@ -2,7 +2,7 @@
 import { FaMoon } from "react-icons/fa";
 import { IoIosSunny } from "react-icons/io";
 import Image from "next/image";
-import "./header.css";
+import "../app/styles/header.css";
 import { toggleMode } from "@/redux/features/themeSlice";
 import { setEn, setEs } from "@/redux/features/langSlice";
 import { toggleMenu } from "@/redux/features/menuBurgerSlice";

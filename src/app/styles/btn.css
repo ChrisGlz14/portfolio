@@ -1,0 +1,61 @@
+.up-btn-show {
+    animation: popup 0.3s ease-in-out;
+} 
+
+.up-btn-hide {
+    animation: hiden 0.3s ease-in;
+}
+
+
+@keyframes popup {
+    0% {
+      width: 0;
+      height: 0;
+    }
+    50% {
+      width: 8rem;
+      height: 8rem;
+    }
+    100% {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+
+
+  @keyframes hiden {
+    from {
+      opacity: 100;
+      transform: scale(100%);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0%);
+    }
+  }
+
+
+  /* Botones de presentacion */
+
+  #btn-mail,#btn-cv {
+      display: inline-block;
+      padding: 20px 40px;
+      margin-right: 20px;
+      border: 1px solid black;
+      background: linear-gradient( to left, transparent 50%,     #a63929 50% );
+      background-size: 200% 100%; 
+      cursor: pointer;
+      transition: all ease .3s;
+  }
+
+  #btn-mail {
+    background: linear-gradient( to bottom, transparent 50%,     #a63929 50% );
+    background-size: 100% 200%;
+    background-position: left top;
+
+  }
+  
+  #btn-mail:hover {
+      background-position: right bottom;
+      color: white;
+  }

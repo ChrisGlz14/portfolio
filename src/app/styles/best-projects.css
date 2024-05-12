@@ -1,0 +1,8 @@
+.container-img {
+    perspective: 500px;
+    transform: scale(1) rotateX(0deg) rotateY(0deg);
+}
+
+.reset-transform {
+    transform: inherit; /* Hereda las propiedades de transformación de .container-img */
+}

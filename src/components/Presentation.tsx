@@ -1,9 +1,17 @@
 import { useAppSelector } from "@/redux/hook";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithubSquare } from "react-icons/fa";
+import '../app/styles/btn.css'
 import Image from "next/image";
-import * as dataEn from '../app/lib/languages/en.json' //Forma de importar todos los datos del archivo JSON con ts
-import * as dataEs from '../app/lib/languages/es.json'
+import * as dataEn from '../app/lib/languages/en.json'; //Forma de importar todos los datos del archivo JSON con ts
+import * as dataEs from '../app/lib/languages/es.json';
+import {
+  motion,
+  useMotionTemplate,
+  useMotionValue,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 
 
 const Presentation = () => {
@@ -32,16 +40,17 @@ const Presentation = () => {
             </section>
             <section className="container-btn flex flex-row mt-14">
               <a
-                className="p-4 rounded-md border-none bg-[#a63929] text-white text-base mr-2 cursor-pointer no-underline hover:bg-orange-700 transition ease-in"
-                href="./img/CV-Christian-Gonzalez-Desarrollador-Web.pdf"
+                className="p-4 rounded-md border-none text-white text-base"
+                href="./img/CV_CHRIS_DESARROLLADOR_WEB_ES.pdf"
                 download
+                id="btn-cv"
                 data-section="profile"
                 data-value="cvBtn"
               >
                 {data?.profile.cvBtn}
               </a>
               <a
-                className={`p-4 rounded-md bg-transparent ${theme === "light"  ? "text-black" : "text-white"} text-base mr-2 cursor-pointer border border-orange-600 hover:bg-orange-700 transition ease-in hover:border-orange-800 hover:text-white`}
+                className={`p-4 rounded-md bg-transparent ${theme === "light"  ? "text-black" : "text-white"} text-base`}
                 id="btn-mail"
                 href="mailto:christianglz9914@gmail.com"
                 data-section="profile"
@@ -51,7 +60,15 @@ const Presentation = () => {
               </a>
             </section>
           </section>
-          <aside className="portfolio-img">
+          <motion.div 
+              className="portfolio-img"  
+              initial={{ opacity: 0, scale: 0.5}}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{
+                duration: 0.8,
+                delay: 0.5,
+                ease: [0, 0.71, 0.2, 1.01]
+              }}>
             <Image
               className="rounded-full border-4 border-orange-600"
               src="/img/christian.jpg"
@@ -72,7 +89,7 @@ const Presentation = () => {
                 </i>
               </a>
             </div>
-          </aside>
+          </motion.div>
         </article>
       </section>
     </>

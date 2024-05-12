@@ -1,7 +1,7 @@
 
 import React, { useEffect, useState } from 'react'
 import { FaArrowAltCircleUp } from 'react-icons/fa'
-import './btn.css'
+import '../app/styles/btn.css'
 import { setTimeout } from 'timers/promises';
 
 

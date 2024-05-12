@@ -40,3 +40,21 @@ body .light {
   content: "";
   /* Otros estilos para el pseudo-elemento después del switch */
 }
+
+::-webkit-scrollbar {
+  width: 7px;
+  opacity: 0.5;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(174, 174, 174, 0.6);
+  border-radius: 100px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(174, 174, 174, 1);
+}
+
+::-webkit-scrollbar-track {
+  background-color: #484848;
+}

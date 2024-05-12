@@ -69,11 +69,11 @@ const Repos = () => {
             key={repo.id}
             className="w-[20rem] h-[16rem] mt-10 p-6 flex flex-col justify-between bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <p className="xl:text-lg">
+            
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
                 {repo.name ? repo.name : repo.create_at}
               </h5>
-            </p>
+            
             <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
               {repo.description}
             </p>

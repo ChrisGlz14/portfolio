@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+
 import { useAppSelector } from "@/redux/hook";
 import * as dataEn from "../app/lib/languages/en.json"; //Forma de importar todos los datos del archivo JSON con ts
 import * as dataEs from "../app/lib/languages/es.json";
@@ -14,8 +15,6 @@ export const BestProjects = () => {
   const data: {
     projects: ProjectData;
   } = language === "es" ? dataEs : dataEn;
-
-
 
 
   const numberOfProjects = 4;
