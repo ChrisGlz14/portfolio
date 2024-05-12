@@ -1,30 +1,30 @@
 {
-    "nav" : {
-      "home": "Home",
-      "projects": "Projects",
-      "repositories": "Repositories",
-      "about-me": "About me",
-      "stack":"Stack of Tecnologies"
-    },
-    "profile": {
-      "presentation-name" : "Hi! My name is",
-      "presentation": "I am a Front-end developer eager to apply my knowledge and continue learning!",
-      "cvBtn": "Download CV",
-      "contactBtn": "Contact Me Via Email Here!",
-      "about-me-title" : "ABOUT ME",
-      "about-me": "My name is Christian Gonzalez, I am 23 years old, and I am originally from Santa Fe, Argentina. Currently, I am studying frontend web development, and my goal is to become a fullstack developer. I enjoy every learning experience and appreciate being part of this beautiful community where I've found many talented peers. I am someone who likes to take on new challenges, feels ready to work in a company, and always gives my best to help.",
-      "stack-title":"MY STACK",
-      "projects-title" : "PROJECTS"
-    },
-    "projects": {
+  "nav" : {
+    "home": "Home",
+    "projects": "Projects",
+    "repositories": "Repositories",
+    "about-me": "About me",
+    "stack":"Stack of Tecnologies"
+  },
+  "profile": {
+    "presentation-name" : "Hi! My name is",
+    "presentation": "I am a Front-end developer eager to apply my knowledge and continue learning!",
+    "cvBtn": "Download CV",
+    "contactBtn": "Contact Me Via Email Here!",
+    "about-me-title" : "ABOUT ME",
+    "about-me": "My name is Christian Gonzalez, I am 23 years old, and I am originally from Santa Fe, Argentina. Currently, I am studying frontend web development, and my goal is to become a fullstack developer. I enjoy every learning experience and appreciate being part of this beautiful community where I've found many talented peers. I am someone who likes to take on new challenges, feels ready to work in a company, and always gives my best to help.",
+    "stack-title":"MY STACK",
+    "projects-title" : "PROJECTS"
+  },
+  "projects": {
 
-  
-      "project-title1": "ANCORA CONSTRUCTION COMPANY",
-      "project-description1": "Despite being in full development, my experience as a freelancer with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality using technologies such as Bootstrap, HTML, CSS, and JavaScript.",
+      "project-title1": "ANCORA EMPRESA CONSTRUCTORA",
+      "project-description1" : "Despite being in full development, my freelance experience with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality by using technologies such as Bootstrap, HTML, CSS and JavaScript.",
       "tecnologies1": "Technologies and Tools Used:",
       "tecnologiesIcon1": "FaHtml5,FaCss3Alt,IoLogoJavascript,FaBootstrap,SiAdobexd",
-      "img-path1": "/img/ancora.png",
-      "url1": "https://ancorasf.netlify.app/",
+      "img-path1" : "/img/ancora.png",
+      "url1" : "https://ancorasf.netlify.app/",
+
 
   
       "project-title2": "INSIDE COACHING",
@@ -73,5 +73,4 @@
       "little-project-title8": "TO-DO LIST",
       "little-project-description8": "This was my first To-Do List. I keep it as a memory and achievement. It might be something simple, but it has its time."
     }
-  }
-  
+}

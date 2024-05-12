@@ -1,35 +1,14 @@
 import React from "react";
 import { RiRocket2Line } from "react-icons/ri";
 import { VscGithub } from "react-icons/vsc";
-import "../app/styles/best-projects.css";
-import {
-  FaHtml5,
-  FaCss3Alt,
-  FaBootstrap,
-  FaWordpress,
-  FaLink,
-  FaSass,
-  FaFigma,
-  FaJs,
-  FaReact,
-} from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaLink, FaSass, FaFigma, FaJs, FaReact } from "react-icons/fa";
 import { TbBrandNextjs } from "react-icons/tb";
+import "../app/styles/best-projects.css";
 import { IoLogoJavascript } from "react-icons/io5";
-import {
-  SiAdobexd,
-  SiTypescript,
-  SiMysql,
-  SiTailwindcss,
-} from "react-icons/si";
+import { SiAdobexd, SiTypescript, SiMysql, SiTailwindcss } from "react-icons/si";
 import Image from "next/image";
 import { useAppSelector } from "@/redux/hook";
-import {
-  motion,
-  useMotionTemplate,
-  useMotionValue,
-  useSpring,
-  useTransform,
-} from "framer-motion";
+import { motion } from "framer-motion";
 
 
 
@@ -46,66 +25,28 @@ interface CardsProjectsProps {
   url: string;
 }
 
-const CardsProjects: React.FC<CardsProjectsProps> = ({
-  title,
-  description,
-  tecnologies,
-  github,
-  link,
-  img,
-  tecnologiesIcon,
-  url,
-}) => {
-
-
-//   const efecto3D = {
-      
-//     hover: ()
-
-//   }
-
-
-
- 
-
-  //Definimos el componente CardsProjects como un componente de tipo React.FC (Functional Component) que nos permite renderizar un componente CardsProjects de forma dinámica a traves de las propiedades de CardsProjectsProps.
-  const theme = useAppSelector((state) => state.themeReducer.mode);
-
-  const iconComponents: { [key: string]: React.JSX.Element } = {
-    //Creo un objeto, tipo mapa, donde defino la key como string y el valor
-    //como React.JSX.Element para poder ser renderizado,
-    //entonces el icono se renderiza con el valor correspondiente
-    FaHtml5: <FaHtml5 />,
-    FaCss3Alt: <FaCss3Alt />,
-    IoLogoJavascript: <IoLogoJavascript />,
-    FaBootstrap: <FaBootstrap />,
-    SiAdobexd: <SiAdobexd />,
-    FaReact: <FaReact />,
-    FaWordpress: <FaWordpress />,
-    FaSass: <FaSass />,
-    FaFigma: <FaFigma />,
-    FaJs: <FaJs />,
-    SiTypescript: <SiTypescript />,
-    SiMysql: <SiMysql />,
-    SiTailwindcss: <SiTailwindcss />,
-    TbBrandNextjs: <TbBrandNextjs />,
-  };
-
-
-
-  const variantes = {
-    hover: {
-      scale: 1.2,
-      transition: {
-        type: "spring",
-        stiffness: 400,
-        damping: 10,
-      },
-    },
-    rest: {
-      scale: 1,
-    }
-  }
+  const CardsProjects: React.FC<CardsProjectsProps> = ({ title, description, tecnologies, github, link, img, tecnologiesIcon, url }) => { 
+    //Definimos el componente CardsProjects como un componente de tipo React.FC (Functional Component) que nos permite renderizar un componente CardsProjects de forma dinámica a traves de las propiedades de CardsProjectsProps.
+    const theme = useAppSelector(state => state.themeReducer.mode);
+    
+    const iconComponents: {[key:string]: React.JSX.Element} = {  //Creo un objeto, tipo mapa, donde defino la key como string y el valor 
+                                                                //como React.JSX.Element para poder ser renderizado,                                                   
+                                                                //entonces el icono se renderiza con el valor correspondiente
+        FaHtml5: <FaHtml5 />,
+        FaCss3Alt: <FaCss3Alt />,
+        IoLogoJavascript: <IoLogoJavascript />,
+        FaBootstrap: <FaBootstrap />,
+        SiAdobexd: <SiAdobexd />,
+        FaReact: <FaReact />,
+        FaWordpress: <FaWordpress />,
+        FaSass: <FaSass />,
+        FaFigma: <FaFigma />,
+        FaJs: <FaJs />,
+        SiTypescript: <SiTypescript />,
+        SiMysql: <SiMysql />,
+        SiTailwindcss: <SiTailwindcss />,
+        TbBrandNextjs: <TbBrandNextjs />,
+    };
   
 
   return (
@@ -120,7 +61,7 @@ const CardsProjects: React.FC<CardsProjectsProps> = ({
                 scale: 1,
                 rotate: 0,
               }}
-              variants={variantes}
+              
               whileHover={{
                 scale: 1.1,
                 rotate: 5,
@@ -134,7 +75,7 @@ const CardsProjects: React.FC<CardsProjectsProps> = ({
               >
                 <Image
                   className="img-proyectos border-2 border-red-600 object-cover mb-3 lg:mb-0 h-[200px] w-[500px]"
-                  src={img}
+                  src={ img }
                   alt="ancora"
                   width={500}
                   height={200}

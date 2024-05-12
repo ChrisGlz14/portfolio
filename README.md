@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Portfolio de Desarrollo - README
 
-## Getting Started
+## Introducción
+Este repositorio contiene el código fuente y los recursos utilizados para construir mi portfolio de desarrollo.
 
-First, run the development server:
+## Agradecimientos
+Quiero expresar mi profundo agradecimiento a Miguel Ángel Durán García (Midudev) y Gonzalo Pozzo (Goncy) por su invaluable conocimiento que transmiten día a día. Son responsables de mi aprendizaje y forman parte de mi camino como desarrollador. ¡Muchas gracias, chicos!
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características
+# React.js y TypeScript
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Utilización de componentes en React
+Se modularizó la aplicación utilizando componentes en React, lo que facilita el desarrollo y mantenimiento del código al dividir la interfaz de usuario en partes reutilizables y fáciles de entender.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Integración de TypeScript con React
+Se integró TypeScript con React para agregar tipos estáticos a JavaScript, lo que proporciona una mayor seguridad y escalabilidad al código, al tiempo que facilita la detección de errores durante el desarrollo.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Integración de iconos en la aplicación
+Se utilizó React Icons para integrar iconos en la aplicación, mejorando la estética y la usabilidad al proporcionar una amplia variedad de íconos personalizables y de alta calidad.
 
-## Learn More
+## Utilización de Tailwind CSS
+Se empleó Tailwind CSS para el diseño y estilización de componentes y elementos de la interfaz de usuario, aprovechando su enfoque de utilidad y clases predefinidas para un desarrollo más eficiente y rápido.
 
-To learn more about Next.js, take a look at the following resources:
+# Redux
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Implementación de Redux
+Se utilizó Redux para manejar el estado de la aplicación de forma centralizada y predecible, lo que facilita la gestión y actualización de datos en toda la aplicación.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Uso de proveedores (Providers)
+Se envolvió la aplicación con proveedores (Providers) para proporcionar el contexto de Redux a todos los componentes, permitiendo el acceso al estado global de manera sencilla y eficiente.
 
-## Deploy on Vercel
+# Next.js
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Aprovechamiento de Next.js
+Se aprovechó Next.js como framework para aplicaciones web, lo que proporciona funcionalidades avanzadas como el renderizado del lado del servidor (SSR) y la generación de sitios estáticos (SSG) para mejorar el rendimiento y la optimización de SEO.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Implementación de SSR
+Se implementó el renderizado del lado del servidor (SSR) para mejorar el rendimiento y la eficiencia de la aplicación al generar el HTML en el servidor antes de enviarlo al cliente, lo que mejora la carga inicial y la indexación en motores de búsqueda.
+
+## Uso de componentes especiales de Next.js
+Se utilizaron componentes especiales proporcionados por Next.js, como Image y Link, para mejorar el rendimiento y la accesibilidad de la aplicación al optimizar la carga de imágenes y la navegación entre páginas.
+
+## Utilización de skeletons con Next.js
+Se implementaron skeletons con Next.js para mejorar la experiencia del usuario al cargar contenido dinámico, permitiendo mostrar un esqueleto de la interfaz mientras se espera la carga de los datos, lo que mejora la percepción de velocidad y suavidad de la aplicación.
+
+# Otros
+
+## Utilización de la API de GitHub
+Se utilizó la API de GitHub para obtener el contenido de los repositorios propios, lo que permitió mostrar información detallada sobre los proyectos alojados en GitHub, como descripciones, estrellas y lenguajes utilizados.
+
+## Utilización de archivos JSON para internacionalización
+Se utilizaron archivos JSON creados para almacenar información en dos idiomas (inglés y español), permitiendo la internacionalización de la aplicación y la adaptación del contenido según las preferencias del usuario.
+
