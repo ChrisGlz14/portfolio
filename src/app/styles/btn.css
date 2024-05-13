@@ -46,6 +46,21 @@
       background-size: 200% 100%; 
       cursor: pointer;
       transition: all ease .3s;
+    }
+
+    @media screen and (max-width: 992px) {
+      #btn-mail,#btn-cv { 
+      margin: 20px;
+      padding: 10px 10px;
+      width: 150px;
+      }
+    }
+
+  #btn-cv {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
   }
 
   #btn-mail {

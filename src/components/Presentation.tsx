@@ -23,7 +23,7 @@ const Presentation = () => {
   return (
     <>
       <section className="portfolio-container flex justify-start content-center sm:h-[815px]" id="home">
-        <article className="flex-container flex flex-col m-auto items-center md:flex-row">
+        <article className="flex-container flex flex-col m-auto items-center md:flex-row w-full justify-center">
           <section className="content-container flex flex-col pb-8 md:pb-0 mx-9 justify-center items-center md:items-start">
             <header className="container-presentation text-center">
               <span data-section="profile" data-value="presentation-name" className="flex text-xl font-semibold text-start mt-2 text-[#a63929]" >
@@ -40,7 +40,7 @@ const Presentation = () => {
             </section>
             <section className="container-btn flex flex-row mt-14">
               <a
-                className="p-4 rounded-md border-none text-white text-base"
+                className="md:p-4 rounded-md border-none text-white text-base text-center"
                 href="./img/CV_CHRIS_DESARROLLADOR_WEB_ES.pdf"
                 download
                 id="btn-cv"
