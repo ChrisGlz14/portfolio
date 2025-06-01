@@ -2,7 +2,9 @@ import React from "react";
 import { RiRocket2Line } from "react-icons/ri";
 import { VscGithub } from "react-icons/vsc";
 import { FaHtml5, FaCss3Alt, FaBootstrap, FaWordpress, FaLink, FaSass, FaFigma, FaJs, FaReact } from "react-icons/fa";
+import { TbBrandCSharp } from "react-icons/tb";
 import { TbBrandNextjs } from "react-icons/tb";
+import { SiMicrosoftsqlserver } from "react-icons/si";
 import "../app/styles/best-projects.css";
 import { IoLogoJavascript } from "react-icons/io5";
 import { SiAdobexd, SiTypescript, SiMysql, SiTailwindcss } from "react-icons/si";
@@ -46,6 +48,8 @@ interface CardsProjectsProps {
         SiMysql: <SiMysql />,
         SiTailwindcss: <SiTailwindcss />,
         TbBrandNextjs: <TbBrandNextjs />,
+        TbBrandCSharp: <TbBrandCSharp />,
+        SiMicrosoftsqlserver: <SiMicrosoftsqlserver />,
     };
   
 
@@ -64,9 +68,9 @@ interface CardsProjectsProps {
               
               whileHover={{
                 scale: 1.1,
-                rotate: 5,
+                rotate: 0,
               }}
-              className="transition-all ease-in-out duration-300 flex justify-center items-center"      
+              className="transition-all ease-in-out duration-200 flex justify-center items-center"      
             >
               <a
                 href={url}

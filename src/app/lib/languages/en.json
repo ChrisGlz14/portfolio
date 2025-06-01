@@ -46,7 +46,16 @@
       "tecnologies4": "Technologies and Tools Used:",
       "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
       "img-path4": "/img/nike-page.png",
-      "url4": "https://e-commerce-nike-liart.vercel.app/"
+      "url4": "https://e-commerce-nike-liart.vercel.app/",
+
+      "project-title5": "STOCK DESKTOP APP",
+      "project-description5": "Stock management application using C#, .NET, and a SQL Server database. The app allows product registration, inventory control, quantity updates, and movement tracking. I implemented an intuitive interface with WinForms and secure database connectivity.",
+      "tecnologies5": "Technologies and Tools Used:",
+      "tecnologiesIcon5": "SiMicrosoftsqlserver,TbBrandCSharp",
+      "img-path5": "/img/appEscritorio.png",
+      "url5": ""
+
+
     },
     "more-projects": {
       "little-project-title1": "React Calculator",

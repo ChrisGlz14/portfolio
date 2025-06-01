@@ -47,7 +47,17 @@
         "tecnologies4": "Tecnologias y y Herramientas utilizadas:",
         "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
         "img-path4": "/img/nike-page.png",
-        "url4": "https://e-commerce-nike-liart.vercel.app/"
+        "url4": "https://e-commerce-nike-liart.vercel.app/",
+
+
+
+        "project-title5": "APP DE ESCRITORIO PARA STOCK",
+        "project-description5": "Aplicación de gestión de stock desarrollada con C#, .NET y una base de datos SQL Server. La app permite registrar productos, controlar inventario, actualizar cantidades y consultar movimientos. Implementé una interfaz intuitiva con WinForms y una conexión segura a la base de datos.",
+        "tecnologies5": "Tecnologías y herramientas utilizadas:",
+        "tecnologiesIcon5": "SiMicrosoftsqlserver, TbBrandCSharp",
+        "img-path5": "/img/appEscritorio.png",
+        "url5": ""
+
 
   },
 

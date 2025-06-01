@@ -16,7 +16,7 @@ export const BestProjects = () => {
   } = language === "es" ? dataEs : dataEn;
 
 
-  const numberOfProjects = 4;
+  const numberOfProjects = 5;
   
 
   const projects = Array.from(
