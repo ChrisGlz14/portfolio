@@ -8,54 +8,43 @@
   },
   "profile": {
     "presentation-name" : "Hi! My name is",
-    "presentation": "I am a Front-end developer eager to apply my knowledge and continue learning!",
+    "presentation": "Software developer in training with experience in React, Next.js, and Node.js, focused on becoming a full-stack developer.",
     "cvBtn": "Download CV",
     "contactBtn": "Contact Me Via Email Here!",
     "about-me-title" : "ABOUT ME",
-    "about-me": "My name is Christian Gonzalez, I am 23 years old, and I am originally from Santa Fe, Argentina. Currently, I am studying frontend web development, and my goal is to become a fullstack developer. I enjoy every learning experience and appreciate being part of this beautiful community where I've found many talented peers. I am someone who likes to take on new challenges, feels ready to work in a company, and always gives my best to help.",
+    "about-me": "Software developer in training, focused on web application development with JavaScript, React, and Next.js. Currently expanding my knowledge towards full-stack development, working with Node.js and SQL and NoSQL databases. Advanced student of the Information Technology Technician at UTN, with expected completion in 2026. I stand out for my continuous learning ability, adaptability, and commitment, with an interest in joining a team where I can contribute value and continue developing professionally.",
     "stack-title":"MY STACK",
     "projects-title" : "PROJECTS"
   },
   "projects": {
-
-      "project-title1": "ANCORA EMPRESA CONSTRUCTORA",
-      "project-description1" : "Despite being in full development, my freelance experience with Ancora allowed me to apply my knowledge in web development and work closely with a team to improve their online presence and functionality by using technologies such as Bootstrap, HTML, CSS and JavaScript.",
+    "project-title1": "NIKE E-COMMERCE (DEVELOPING)",
+      "project-description1": "I created this website with the goal of simulating an e-commerce platform, aiming to enhance both interface and design while improving my skills in using Tailwind, Next.js, and React.",
       "tecnologies1": "Technologies and Tools Used:",
-      "tecnologiesIcon1": "FaHtml5,FaCss3Alt,IoLogoJavascript,FaBootstrap,SiAdobexd",
-      "img-path1" : "/img/ancora.png",
-      "url1" : "https://ancorasf.netlify.app/",
+      "tecnologiesIcon1": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
+      "img-path1": "/img/nike-page.png",
+      "url1": "https://e-commerce-nike-liart.vercel.app/",
 
 
-  
-      "project-title2": "INSIDE COACHING",
-      "project-description2": "Landing page created for a client with a coaching academy built in WordPress. Developed with the Tic's con Alas Empresa Jr team, we handled UI/UX development and prototyping in Adobe XD, following the Scrum methodology.",
+      "project-title2": "STOCK DESKTOP APP",
+      "project-description2": "Stock management application using C#, .NET, and a SQL Server database. The app allows product registration, inventory control, quantity updates, and movement tracking. I implemented an intuitive interface with WinForms and secure database connectivity.",
       "tecnologies2": "Technologies and Tools Used:",
-      "tecnologiesIcon2": "FaHtml5,SiAdobexd,FaWordpress",
-      "img-path2": "/img/inside-coachjign.png",
-      "url2": "https://insidecoaching.com.ar/",
+      "tecnologiesIcon2": "SiMicrosoftsqlserver,TbBrandCSharp",
+      "img-path2": "/img/appEscritorio.png",
+      "url2": "https://www.youtube.com/watch?v=0M-iOAf0UCg",
   
-      "project-title3": "ALAS JR ENTERPRISE",
-      "project-description3": "Website for Alas responsible for maintenance and updates. Along with my colleagues, we perform updates when required and necessary, in addition to being developers for companies and SMEs looking to take their business to the next level.",
+      "project-title3": "INSIDE COACHING",
+      "project-description3": "Landing page developed for a client in the coaching academy sector using WordPress, in collaboration with the Tic's con Alas Empresa Jr team. Worked alongside teammates on UI/UX design and prototyping using Figma, following Scrum methodology. Currently not hosted, but the prototype and design can be viewed at the following link by clicking on the image.",
       "tecnologies3": "Technologies and Tools Used:",
-      "tecnologiesIcon3": "FaHtml5,FaWordpress",
-      "img-path3": "/img/alas.png",
-      "url3": "https://www.alasempresajunior.com.ar/",
-
-      "project-title4": "NIKE E-COMMERCE (DEVELOPING)",
-      "project-description4": "I created this website with the goal of simulating an e-commerce platform, aiming to enhance both interface and design while improving my skills in using Tailwind, Next.js, and React.",
+      "tecnologiesIcon3": "FaHtml5,FaWordpress,FaFigma",
+      "img-path3": "/img/inside-coachjign.png",
+      "url3": "https://www.dropbox.com/scl/fi/024381v1knk89pop5k6o3/Inside-Web-Escritorio.pdf?rlkey=9quift3chgcnywb4ovi3z4075&st=egmmpfb3&dl=0",
+  
+      "project-title4": "ALAS JR ENTERPRISE",
+      "project-description4": "Website for Alas responsible for maintenance and updates. Along with my colleagues, we perform updates when required and necessary, in addition to being developers for companies and SMEs looking to take their business to the next level. Currently not hosted.",
       "tecnologies4": "Technologies and Tools Used:",
-      "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
-      "img-path4": "/img/nike-page.png",
-      "url4": "https://e-commerce-nike-liart.vercel.app/",
-
-      "project-title5": "STOCK DESKTOP APP",
-      "project-description5": "Stock management application using C#, .NET, and a SQL Server database. The app allows product registration, inventory control, quantity updates, and movement tracking. I implemented an intuitive interface with WinForms and secure database connectivity.",
-      "tecnologies5": "Technologies and Tools Used:",
-      "tecnologiesIcon5": "SiMicrosoftsqlserver,TbBrandCSharp",
-      "img-path5": "/img/appEscritorio.png",
-      "url5": ""
-
-
+      "tecnologiesIcon4": "FaHtml5,FaWordpress",
+      "img-path4": "/img/alas.png",
+      "url4": "https://www.alasempresajunior.com.ar/"
     },
     "more-projects": {
       "little-project-title1": "React Calculator",

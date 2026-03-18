@@ -11,10 +11,12 @@ import {
   FaFigma,
   FaJs,
   FaNodeJs,
-  FaJava,} from "react-icons/fa";
+  FaJava,
+  FaAtlas,
+  FaNpm,} from "react-icons/fa";
 import {TbBrandCSharp } from "react-icons/tb";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiTailwindcss, SiTypescript, SiMysql, SiExpress, SiMicrosoftsqlserver } from "react-icons/si";
+import { SiTailwindcss, SiTypescript, SiMysql, SiExpress, SiMicrosoftsqlserver, SiMongodb } from "react-icons/si";
 import { useAppSelector } from "@/redux/hook";
 import { motion } from "framer-motion";
 
@@ -100,6 +102,18 @@ const Stack = () => {
 
         <motion.div whileHover={{ scale: 1.2 }}>
           <SiExpress className="text-7xl text-gray-500" />
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.2 }}>
+          <FaFigma className="text-7xl text-pink-500" />
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.2 }}>
+          <FaNpm className="text-7xl text-red-500" />
+        </motion.div>
+
+        <motion.div whileHover={{ scale: 1.2 }}>
+          <SiMongodb className="text-7xl text-green-500" />
         </motion.div>
 
       </motion.div>

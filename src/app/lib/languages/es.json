@@ -8,11 +8,11 @@
   },
 "profile": {
   "presentation-name" : "Hola! Mi nombre es",
-  "presentation" : "Soy un desarrollador Front-end con ganas de aplicar mis conocimientos y seguir aprendiendo!",
+  "presentation" : "Desarrollador de software en formación con experiencia en React, Next.js y Node.js, enfocado en convertirme en desarrollador full-stack.",
   "cvBtn" : "Descargar CV",
   "contactBtn" : "Contactame Por Mail Aquí!" ,
   "about-me-title" : "SOBRE MI",
-  "about-me" : "Me llamo Christian Gonzalez, tengo 23 años y soy oriundo de Santa Fe, Argentina. Actualmente estoy estudiando el desarrollo web frontend y mi objetivo es convertirme en un fullstack, disfruto de cada aprendizaje y de esta comunidad hermosa en la que encontre muchos compañeros muy buenos. Soy una persona que le gusta afrontar nuevos retos, que siente que esta lista para trabajar en una empresa y que siempre va a dar todo para ayudar.",
+  "about-me" : "Desarrollador de software en formación, enfocado en el desarrollo de aplicaciones web con JavaScript, React y Next.js. Actualmente amplío mis conocimientos hacia el desarrollo full-stack, trabajando con Node.js y bases de datos SQL y NoSQL, Estudiante avanzado de la Tecnicatura en Tecnologías de la Información en la UTN, con finalización prevista en 2026. Me destaco por mi capacidad de aprendizaje continuo, adaptación y compromiso, con interés en integrarme a un equipo donde pueda aportar valor y seguir desarrollándome profesionalmente.",
   "stack-title":"MI STACK",
   "projects-title" : "PROYECTOS"
 
@@ -21,43 +21,34 @@
   },
   "projects": {
 
-      "project-title1": "ANCORA EMPRESA CONSTRUCTORA",
-      "project-description1" : "A pesar de estar en pleno desarrollo, mi experiencia como freelance con Ancora me permitió aplicar mis conocimientos en desarrollo web y trabajar en estrecha colaboración con un equipo para mejorar su presencia en línea y funcionalidad mediante el uso de tecnologías como Bootstrap, HTML, CSS y JavaScript.",
-      "tecnologies1": "Tecnologias y Herramientas utilizadas:",
-      "tecnologiesIcon1": "FaHtml5,FaCss3Alt,IoLogoJavascript,FaBootstrap,SiAdobexd",
-      "img-path1" : "/img/ancora.png",
-      "url1" : "https://ancorasf.netlify.app/",
 
-      "project-title2": "INSIDE COACHING",
-      "project-description2" : "Landing page realizada para un cliente con una academia de coachingrealizada en wordpress y desarrollada junto el equipo de Tic's con Alas Empresa Jr, junto con mis compañeros realizamos el desarrollo UI/UX y prototipado en adobe xd y trabajamos con metodologia Scrum.",
-      "tecnologies2": "Tecnologias y Herramientas utilizadas:",
-      "tecnologiesIcon2": "FaHtml5,SiAdobexd,FaWordpress",
-      "img-path2" : "/img/inside-coachjign.png",
-      "url2" : "https://insidecoaching.com.ar/",
+     "project-title1": "NIKE E-COMMERCE - EN DESARROLLO",
+        "project-description1": "Realice esta pagina con el objetivo de simular un E-commerce, ademas de mejorar con respecto al diseño de interfaces y diseño, mientras mejoro en el uso de tailwind, next y react.",
+        "tecnologies1": "Tecnologias y y Herramientas utilizadas:",
+        "tecnologiesIcon1": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
+        "img-path1": "/img/nike-page.png",
+        "url1": "https://e-commerce-nike-liart.vercel.app/",
 
-        "project-title3": "ALAS EMPRESA JR",
-        "project-description3" : "Pagina de Alas encargados del mantenimiento y actualizacion, junto con mis compañeros realizamos actualizaciones cuando se requiera y sea necesario, además de ser los desarrolladores de empresas y pymes que quieran llevar su empresa al proximo nivel.",
-        "tecnologies3": "Tecnologias y Herramientas utilizadas:",
-        "tecnologiesIcon3": "FaHtml5,FaWordpress",
-        "img-path3" : "/img/alas.png",
-        "url3" : "https://www.alasempresajunior.com.ar/",
+        "project-title2": "APP DE ESCRITORIO PARA STOCK",
+        "project-description2": "Aplicación de gestión de stock desarrollada con C#, .NET y una base de datos SQL Server. La app permite registrar productos, controlar inventario, actualizar cantidades y consultar movimientos. Implementé una interfaz intuitiva con WinForms y una conexión segura a la base de datos.",
+        "tecnologies2": "Tecnologías y herramientas utilizadas:",
+        "tecnologiesIcon2": "SiMicrosoftsqlserver, TbBrandCSharp",
+        "img-path2": "/img/appEscritorio.png",
+        "url2": "https://www.youtube.com/watch?v=0M-iOAf0UCg",
 
-        "project-title4": "NIKE E-COMMERCE - EN DESARROLLO",
-        "project-description4": "Realice esta pagina con el objetivo de simular un E-commerce, ademas de mejorar con respecto al diseño de interfaces y diseño, mientras mejoro en el uso de tailwind, next y react.",
-        "tecnologies4": "Tecnologias y y Herramientas utilizadas:",
-        "tecnologiesIcon4": "FaHtml5, FaCss3Alt,IoLogoJavascript,SiTailwindcss, SiTypescript,  FaReact,TbBrandNextjs ",
-        "img-path4": "/img/nike-page.png",
-        "url4": "https://e-commerce-nike-liart.vercel.app/",
+      "project-title3": "INSIDE COACHING",
+      "project-description3" : "Landing page realizada para un cliente con una academia de coaching realizada en wordpress y desarrollada junto el equipo de Tic's con Alas Empresa Jr, junto con mis compañeros realizamos el desarrollo UI/UX y prototipado en figma y trabajamos con metodologia Scrum. Actualmente sin Hosting, pero se puede ver el prototipo y diseño en el siguiente link hacendo click en la imagen.",
+      "tecnologies3": "Tecnologias y Herramientas utilizadas:",
+      "tecnologiesIcon3": "FaHtml5,FaWordpress,FaFigma",
+      "img-path3" : "/img/inside-coachjign.png",
+      "url3" : "https://www.dropbox.com/scl/fi/024381v1knk89pop5k6o3/Inside-Web-Escritorio.pdf?rlkey=9quift3chgcnywb4ovi3z4075&st=egmmpfb3&dl=0",
 
-
-
-        "project-title5": "APP DE ESCRITORIO PARA STOCK",
-        "project-description5": "Aplicación de gestión de stock desarrollada con C#, .NET y una base de datos SQL Server. La app permite registrar productos, controlar inventario, actualizar cantidades y consultar movimientos. Implementé una interfaz intuitiva con WinForms y una conexión segura a la base de datos.",
-        "tecnologies5": "Tecnologías y herramientas utilizadas:",
-        "tecnologiesIcon5": "SiMicrosoftsqlserver, TbBrandCSharp",
-        "img-path5": "/img/appEscritorio.png",
-        "url5": ""
-
+        "project-title4": "ALAS EMPRESA JR",
+        "project-description4" : "Pagina de Alas encargados del mantenimiento y actualizacion, junto con mis compañeros realizamos actualizaciones cuando era necesario, asesorando de empresas y pymes que quieran llevar su empresa al proximo nivel. Pagina Sin Hosting",
+        "tecnologies4": "Tecnologias y Herramientas utilizadas:",
+        "tecnologiesIcon4": "FaHtml5,FaWordpress",
+        "img-path4" : "/img/alas.png",
+        "url4" : ""
 
   },
 

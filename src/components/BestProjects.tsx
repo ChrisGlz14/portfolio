@@ -16,12 +16,12 @@ export const BestProjects = () => {
   } = language === "es" ? dataEs : dataEn;
 
 
-  const numberOfProjects = 5;
+  const numberOfProjects = 4;
   
 
   const projects = Array.from(
     { length: numberOfProjects },
-    (_, index) => index + 1
+    (_, index) => index +1
   ).map((index) => {
     const project = {
       title: data.projects[`project-title${index}`] || "",
