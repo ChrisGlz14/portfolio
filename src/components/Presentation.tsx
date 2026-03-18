@@ -41,7 +41,7 @@ const Presentation = () => {
             <section className="container-btn flex flex-row mt-14">
               <a
                 className="md:p-4 rounded-md border-none text-white text-base text-center"
-                href="./img/CV_ES_GONZALEZ_CHRISTIAN.pdf"
+                href="./img/CV_Gonzalez,Christian Desarrollador.pdf"
                 download
                 id="btn-cv"
                 data-section="profile"
