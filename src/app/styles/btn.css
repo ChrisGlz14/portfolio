@@ -1,76 +1,156 @@
-.up-btn-show {
-    animation: popup 0.3s ease-in-out;
-} 
-
-.up-btn-hide {
-    animation: hiden 0.3s ease-in;
-}
-
+/* ── Botón flotante (UpButton) ───────────────────────── */
+.up-btn-show { animation: popup 0.3s ease-in-out; }
+.up-btn-hide { animation: hiden 0.3s ease-in; }
 
 @keyframes popup {
-    0% {
-      width: 0;
-      height: 0;
-    }
-    50% {
-      width: 8rem;
-      height: 8rem;
-    }
-    100% {
-      width: 5rem;
-      height: 5rem;
-    }
-  }
+    0%   { width: 0;     height: 0;     }
+    50%  { width: 8rem;  height: 8rem;  }
+    100% { width: 5rem;  height: 5rem;  }
+}
 
+@keyframes hiden {
+    from { opacity: 1; transform: scale(1); }
+    to   { opacity: 0; transform: scale(0); }
+}
 
-  @keyframes hiden {
-    from {
-      opacity: 100;
-      transform: scale(100%);
-    }
-    to {
-      opacity: 0;
-      transform: scale(0%);
-    }
-  }
-
-
-  /* Botones de presentacion */
-
-  #btn-mail,#btn-cv {
-      display: inline-block;
-      padding: 20px 40px;
-      margin-right: 20px;
-      border: 1px solid black;
-      background: linear-gradient( to left, transparent 50%,     #a63929 50% );
-      background-size: 200% 100%; 
-      cursor: pointer;
-      transition: all ease .3s;
-    }
-
-    @media screen and (max-width: 992px) {
-      #btn-mail,#btn-cv { 
-      margin: 20px;
-      padding: 10px 10px;
-      width: 150px;
-      }
-    }
-
-  #btn-cv {
-    text-align: center;
+/* ── Botón primario (CV) ─────────────────────────────── */
+.btn-primary {
+    display:         inline-flex;
+    align-items:     center;
     justify-content: center;
-    align-items: center;
-    display: flex;
-  }
+    padding:         12px 32px;
+    border-radius:   10px;
+    font-weight:     600;
+    font-size:       0.95rem;
+    color:           #ffffff;
+    background:      linear-gradient(135deg, #ea580c 0%, #7c3aed 100%);
+    box-shadow:      0 4px 20px #ea580c40;
+    border:          none;
+    cursor:          pointer;
+    text-decoration: none;
+    position:        relative;
+    overflow:        hidden;
+    transition:      transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
 
-  #btn-mail {
-    background: linear-gradient( to bottom, transparent 50%,     #a63929 50% );
-    background-size: 100% 200%;
-    background-position: left top;
+/* Efecto shine al hover */
+.btn-primary::after {
+    content:    '';
+    position:   absolute;
+    top:        -50%;
+    left:       -75%;
+    width:      50%;
+    height:     200%;
+    background: rgba(255, 255, 255, 0.22);
+    transform:  skewX(-20deg);
+    transition: left 0.5s ease;
+}
 
-  }
-  
-  #btn-mail:hover {
-      background-position: right bottom;
-      color: white;
-  }
+.btn-primary:hover {
+    transform:  translateY(-3px);
+    box-shadow: 0 8px 28px #ea580c60;
+    filter:     brightness(1.08);
+}
+
+.btn-primary:hover::after {
+    left: 150%;
+}
+
+/* ── Botón outline (Contacto) ────────────────────────── */
+.btn-outline {
+    display:         inline-flex;
+    align-items:     center;
+    justify-content: center;
+    padding:         12px 32px;
+    border-radius:   10px;
+    font-weight:     600;
+    font-size:       0.95rem;
+    color:           #ea580c;
+    background:      transparent;
+    border:          2px solid #ea580c;
+    cursor:          pointer;
+    text-decoration: none;
+    transition:      all 0.25s ease;
+}
+
+.btn-outline:hover {
+    background:   linear-gradient(135deg, #ea580c, #7c3aed);
+    color:        #ffffff;
+    border-color: transparent;
+    transform:    translateY(-3px);
+    box-shadow:   0 8px 24px #ea580c40;
+}
+
+/* ── Imagen con anillo ───────────────────────────────── */
+.img-ring {
+    display:         flex;
+    align-items:     center;
+    justify-content: center;
+    width:           214px;
+    height:          214px;
+    border-radius:   50%;
+    background:      linear-gradient(135deg, #ea580c 0%, #7c3aed 60%, #fb923c 100%);
+    padding:         4px;
+    animation:       ring-pulse 3.5s ease-in-out infinite;
+}
+
+@keyframes ring-pulse {
+    0%, 100% { box-shadow: 0 0 22px #ea580c40, 0 0 55px #7c3aed1a; }
+    50%       { box-shadow: 0 0 45px #ea580c73, 0 0 90px #7c3aed33; }
+}
+
+.img-profile {
+    border-radius: 50% !important;
+    width:         206px !important;
+    height:        206px !important;
+    object-fit:    cover;
+    display:       block;
+}
+
+/* ── Tipografía de presentación ──────────────────────── */
+.pres-greeting {
+    font-size:      1.05rem;
+    font-weight:    600;
+    color:          #ea580c;
+    letter-spacing: 0.03em;
+    margin-bottom:  10px;
+}
+
+.pres-name {
+    font-size:               clamp(2rem, 5vw, 3.2rem);
+    font-weight:             800;
+    line-height:             1.1;
+    background:              linear-gradient(90deg, #ea580c 0%, #7c3aed 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip:         text;
+    text-align:              center;
+    margin-bottom:           4px;
+}
+
+@media (min-width: 768px) {
+    .pres-name { text-align: left; }
+}
+
+.pres-bio {
+    max-width:   400px;
+    line-height: 1.75;
+    margin-top:  18px;
+    font-size:   0.97rem;
+    text-align:  center;
+}
+
+@media (min-width: 768px) {
+    .pres-bio { text-align: left; }
+}
+
+/* ── Iconos sociales ─────────────────────────────────── */
+.social-icon {
+    display:    inline-flex;
+    transition: transform 0.25s ease, filter 0.25s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-5px) scale(1.18);
+    filter:    drop-shadow(0 4px 10px #ea580c73);
+}
