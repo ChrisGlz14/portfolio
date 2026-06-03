@@ -22,29 +22,22 @@ export const Header = () => {
   return (
     <>
       <nav
-        className={`flex items-center justify-between flex-wrap p-2 ${
-          theme === "light"
-            ? "bg-orange-600 text-black"
-            : "bg-gray-800 text-white" 
-        } ${menu === "" ? "pb-14 lg:pb-0" : ""}`}
+        className={`nav-glass ${theme} flex items-center pb-0 justify-between flex-wrap pr-4 ${menu ? 'pb-14 lg:pb-0 min-h-screen' : 'menu-abierto'}`}
       >
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
+        <div className="flex items-center flex-shrink-0 mr-6">
           <div className="logo">
             <Image src="/img/logoCGc.svg" alt="Logo" width={100} height={100} />
           </div>
         </div>
+
         <div className="block lg:hidden">
           <button
             onClick={() => dispatch(toggleMenu())}
             id="boton"
-            className={`flex items-center px-3 py-2 border rounded ${
-              theme === "light"
-                ? "bg-orange-600 text-black border-black"
-                : "bg-gray-800 text-white hover:border-white "
-            }`}
+            className="burger-btn flex items-center px-3 py-2 border rounded"
           >
             <svg
-              className="fill-current h-3 w-3"
+              className="fill-current h-3 w-3 text-white"
               viewBox="0 0 20 20"
               xmlns="http://www.w3.org/2000/svg"
             >
@@ -53,125 +46,71 @@ export const Header = () => {
             </svg>
           </button>
         </div>
+
         <div
           id="menu"
           className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center ${
             menu === "hidden" ? "hidden" : ""
-          } `}
+          }`}
         >
           <div className="text-base lg:flex-grow">
-            <ul className="lg:flex gap-10 justify-center  align-middle">
+            <ul className="lg:flex gap-10 justify-center align-middle">
               <li className="mt-5 lg:mt-0">
-                <a
-                  href="#"
-                  className={`links  ${
-                    theme === "light"
-                      ? "text-white hover:text-black transition 300"
-                      : "text-white hover:text-yellow-300"
-                  }`}
-                  id="nav-home"
-                  data-section="nav"
-                  data-value="home"
-                  onClick={() => scrollHome()}
-                >
+                <a href="#" className="links" id="nav-home" data-section="nav" data-value="home" onClick={() => scrollHome()}>
                   Home
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a
-                  href="#"
-                  className={`links  ${
-                    theme === "light"
-                      ? "text-white hover:text-black transition 300"
-                      : "text-white hover:text-yellow-300"
-                  }`}
-                  id="nav-projects"
-                  data-section="nav"
-                  data-value="projects"
-                  onClick={() => scrollProjects()}
-                >
+                <a href="#" className="links" id="nav-projects" data-section="nav" data-value="projects" onClick={() => scrollProjects()}>
                   {data?.nav.projects}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a
-                  href="#"
-                  className={`links  ${
-                    theme === "light"
-                      ? "text-white hover:text-black transition 300"
-                      : "text-white hover:text-yellow-300"
-                  }`}
-                  id="nav-repos"
-                  data-section="repositories"
-                  data-value="repositories"
-                  onClick={() => scrollRepos()}
-                >
+                <a href="#" className="links" id="nav-repos" data-section="repositories" data-value="repositories" onClick={() => scrollRepos()}>
                   {data?.nav["repositories"]}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a
-                  href="#"
-                  className={`links  ${
-                    theme === "light"
-                      ? "text-white hover:text-black transition 300"
-                      : "text-white hover:text-yellow-300"
-                  }`}
-                  id="nav-stack"
-                  data-section="nav"
-                  data-value="stack"
-                  onClick={() => scrollStack()}
-                >
+                <a href="#" className="links" id="nav-stack" data-section="nav" data-value="stack" onClick={() => scrollStack()}>
                   {data?.nav.stack}
                 </a>
               </li>
+
               <li className="flex justify-center mt-5 lg:mt-0 items-center">
-              <button
-  className={`switch ${btnState === "dark" ? "light" : "dark"} w-12 h-6 rounded-full border-none relative cursor-pointer outline-none`}
-  id="switch"
-  onClick={() => {
-    dispatch(toggleMode());
-  }}
->
-  <span className="absolute left-[2px] top-1/2 transform -translate-y-1/2">
-    <i>
-      <IoIosSunny className="text-white text-xl leading-6 block bg-transparent shadow-sm transition 300 ease-in rounded-full" />
-    </i>
-  </span>
-
-  <span className="absolute right-[2px] top-1/2 transform -translate-y-1/2">
-    <i>
-      <FaMoon className="text-white text-lg leading-6 block bg-transparent shadow-sm transition 300 ease-in rounded-full" />
-    </i>
-  </span>
-</button>
-
+                <div
+                  className="theme-toggle w-12 h-6 relative flex items-center bg-gray-300 rounded-full p-1 cursor-pointer transition-all duration-300"
+                  onClick={() => dispatch(toggleMode())}
+                >
+                  <div className={`w-7 h-6 absolute left-0 top-0 bg-white rounded-full transition-transform duration-300 ${btnState === "dark" ? "translate-x-5" : "translate-x-0"}`} />
+                  <span className="absolute left-[4px] pointer-events-none">
+                    <IoIosSunny className={`${btnState === "dark" ? "text-gray-400" : "text-yellow-500"} text-sm`} />
+                  </span>
+                  <span className="absolute right-[4px] pointer-events-none">
+                    <FaMoon className={`${btnState === "dark" ? "text-indigo-500" : "text-gray-400"} text-xs`} />
+                  </span>
+                </div>
               </li>
-              <li className="switch-lang flex gap-2 justify-center mt-5 lg:mt-0">
+
+              <li className="switch-lang flex gap-2 justify-center mt-5 lg:mt-0 items-center">
                 <Image
-                  className="links cursor-pointer"
+                  className="flag-btn cursor-pointer"
                   id="flags"
-                  alt="imagen"
+                  alt="Español"
                   src="/img/spanicon.svg"
                   data-language="es"
                   width={25}
                   height={25}
-                  onClick={() => {
-                    dispatch(setEs());
-                  }}
+                  onClick={() => dispatch(setEs())}
                 />
-
                 <Image
-                  className="links cursor-pointer"
+                  className="flag-btn cursor-pointer"
                   id="flags"
-                  alt="img es"
+                  alt="English"
                   src="/img/usaicon.svg"
                   data-language="en"
                   width={25}
                   height={25}
-                  onClick={() => {
-                    dispatch(setEn());
-                  }}
+                  onClick={() => dispatch(setEn())}
                 />
               </li>
             </ul>

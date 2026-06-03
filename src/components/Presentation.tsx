@@ -15,7 +15,6 @@ import {
 
 
 const Presentation = () => {
-  const theme = useAppSelector(state => state.themeReducer.mode)
   const language = useAppSelector(state => state.langReducer.mode)
   const data = language === "es" ? dataEs : dataEn; //Creo una constante data, igualo language a dataEs en caso de ser identico a "es" y de lo contrario la igualo a dataEn
 
@@ -30,10 +29,10 @@ const Presentation = () => {
               {data?.profile['presentation-name']}
               </span>
             </header>
-            <section className={`portfolio-name text-5xl font-semibold ${theme === 'light' ? "text-black" : "text-white" }`} >
+            <section className="portfolio-name text-5xl font-semibold text-themed">
               <h1 className="text-center sm:text-start">Christian Gonzalez</h1>
             </section>
-            <section className={`text-center md:text-start presentation-paragraph flex ${theme === 'light' ? "text-black" : "text-white"}`}>
+            <section className="text-center md:text-start presentation-paragraph flex text-themed">
               <p data-section="profile" data-value="presentation" className="mt-8">
                 {data?.profile.presentation}
               </p>
@@ -50,7 +49,7 @@ const Presentation = () => {
                 {data?.profile.cvBtn}
               </a>
               <a
-                className={`p-4 rounded-md bg-transparent ${theme === "light"  ? "text-black" : "text-white"} text-base`}
+                className="p-4 rounded-md bg-transparent text-themed text-base"
                 id="btn-mail"
                 href="mailto:christianglz9914@gmail.com"
                 data-section="profile"

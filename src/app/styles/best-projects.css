@@ -1,8 +1,84 @@
+/* ── Perspective base (existente) ─────────────────── */
 .container-img {
     perspective: 500px;
     transform: scale(1) rotateX(0deg) rotateY(0deg);
 }
 
 .reset-transform {
-    transform: inherit; /* Hereda las propiedades de transformación de .container-img */
+    transform: inherit;
+}
+
+/* ── Glass card ───────────────────────────────────── */
+.card-glass {
+    position:      relative;
+    background:    var(--card-bg);
+    border:        1px solid var(--card-border);
+    border-radius: 18px;
+    box-shadow:    0 6px 28px var(--card-shadow);
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    overflow:      hidden;
+    transition:    transform 0.35s ease, box-shadow 0.35s ease;
+    padding:       20px;
+}
+
+.card-glass:hover {
+    transform:  translateY(-6px);
+    box-shadow: 0 16px 40px var(--card-hover-shadow);
+}
+
+/* Barra de acento izquierda */
+.card-glass::before {
+    content:       '';
+    position:      absolute;
+    top:           0;
+    left:          0;
+    width:         4px;
+    height:        100%;
+    background:    linear-gradient(180deg, #ea580c 0%, #7c3aed 100%);
+    border-radius: 18px 0 0 18px;
+}
+
+/* ── Título de la card ────────────────────────────── */
+.card-title-text {
+    font-size:   1.05rem;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    background:  linear-gradient(90deg, #ea580c 0%, #a855f7 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* ── Descripción ──────────────────────────────────── */
+.card-description {
+    font-size:   0.9rem;
+    line-height: 1.7;
+    opacity:     0.85;
+    color:       var(--text-primary);
+}
+
+/* ── Iconos de acción (GitHub / link) ─────────────── */
+.card-action-icons {
+    color:      var(--text-primary);
+    opacity:    0.75;
+    transition: opacity 0.2s ease;
+}
+
+.card-action-icons:hover {
+    opacity: 1;
+}
+
+/* ── Footer de tecnologías ────────────────────────── */
+.card-tech-label {
+    font-size:      0.78rem;
+    font-weight:    600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color:          var(--text-primary);
+    opacity:        0.6;
+}
+
+.card-tech-icons {
+    color: var(--text-primary);
 }

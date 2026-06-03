@@ -1,44 +1,155 @@
+/* ── Nav glassmorphism ────────────────────────────── */
+.nav-glass {
+    position:   sticky;
+    height:     50px;
+    top:        0;
+    z-index:    50;
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    transition: background 0.35s ease, box-shadow 0.35s ease;
+}
+
+.nav-glass.light {
+    background:    #ea580c2e;
+    border-bottom: 1px solid #ffffff4d;
+    box-shadow:    0 4px 28px #ea580c26, inset 0 1px 0 #ffffff33;
+}
+
+.nav-glass.dark {
+    background:    #0f172a80;
+    border-bottom: 1px solid #ffffff1a;
+    box-shadow:    0 4px 28px #00000059, inset 0 1px 0 #ffffff0f;
+}
+
+/* ── Logo ─────────────────────────────────────────── */
+.logo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.08) rotate(-3deg);
+    filter:    drop-shadow(0 0 12px #ffffff80);
+}
+
+/* ── Nav links ────────────────────────────────────── */
+.links {
+    position:       relative;
+    font-weight:    500;
+    letter-spacing: 0.04em;
+    padding-bottom: 4px;
+    
+    transition:     color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.links.light {
+    position:       relative;
+    font-weight:    500;
+    letter-spacing: 0.04em;
+    padding-bottom: 4px;
+    color:          #000;
+    transition:     color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.links::after {
+    content:       '';
+    position:      absolute;
+    bottom:        0;
+    left:          50%;
+    width:         0;
+    height:        2px;
+    border-radius: 2px;
+    transition:    width 0.3s ease, left 0.3s ease;
+}
+
+/* Línea underline: naranja→blanco en light, amarillo→naranja en dark */
+.nav-glass.light .links::after {
+    background: linear-gradient(90deg, #ffffff 0%, #ffffff99 100%);
+}
+
+.nav-glass.dark .links::after {
+    background: linear-gradient(90deg, #fde047 0%, #fb923c 100%);
+}
+
+.links:hover,
+.links:focus {
+    text-shadow: 0 0 12px #ffffffb3;
+}
+
+.nav-glass.dark .links:hover,
+.nav-glass.dark .links:focus {
+    color:       #fde047;
+    text-shadow: 0 0 12px #fde04766;
+}
+
+.links:hover::after,
+.links:focus::after {
+    width: 100%;
+    left:  0;
+}
+
+/* ── Hamburger button ─────────────────────────────── */
+.burger-btn {
+    background:    #ffffff1f !important;
+    border-color:  #ffffff4d !important;
+    backdrop-filter: blur(8px);
+    color:         #ffffff;
+    transition:    background 0.25s ease, transform 0.2s ease, box-shadow 0.25s ease;
+}
+
+.burger-btn:hover {
+    background: #ffffff38 !important;
+    box-shadow: 0 0 14px #ffffff33;
+    transform:  scale(1.06);
+}
+
+/* ── Theme toggle ─────────────────────────────────── */
+.theme-toggle {
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform:  scale(1.1);
+    box-shadow: 0 0 14px #ffffff59;
+}
+
+/* ── Flag buttons ─────────────────────────────────── */
+.flag-btn {
+    border-radius: 3px;
+    transition:    transform 0.22s ease, filter 0.22s ease;
+}
+
+.flag-btn:hover {
+    transform: scale(1.22) translateY(-3px);
+    filter:    drop-shadow(0 4px 8px #00000066);
+}
+
+/* ── Switch (legado, por compatibilidad) ──────────── */
 .switch {
-    position: relative;
-    width: 48px;
-    height: 24px; 
+    position:      relative;
+    width:         48px;
+    height:        24px;
     border-radius: 12px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+    cursor:        pointer;
+    transition:    background-color 0.3s ease;
 }
 
-.switch.dark {
-    background-color: rgb(46, 46, 46);
-}
-
-.switch.light {
-    background-color: rgb(194, 165, 2);
-}
+.switch.dark  { background-color: #2e2e2e; }
+.switch.light { background-color: #c2a502; }
 
 .switch::after {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    position: absolute;
+    content:       "";
+    display:       block;
+    width:         24px;
+    height:        24px;
+    position:      absolute;
     background-color: #f1f1f1;
-    top: 0;
-    left: 0;
+    top:           0;
+    left:          0;
     border-radius: 50%;
-    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease; 
+    box-shadow:    0 0 2px 2px #00000033;
+    transition:    transform 0.3s ease;
 }
 
-.switch.light::after {
-    transform: translateX(100%); /* Mueve el interruptor a la derecha al estado "light" */
-}
-
-/* Agrega un estilo cuando se activa el interruptor (cambia de dark a light) */
-.switch.active {
-    background-color: rgb(194, 165, 2);
-}
-
-.switch.active::after {
-    transform: translateX(100%); /* Mueve el interruptor a la derecha al estado "light" */
-}
-
+.switch.light::after { transform: translateX(100%); }
+.switch.active       { background-color: #c2a502; }
+.switch.active::after { transform: translateX(100%); }

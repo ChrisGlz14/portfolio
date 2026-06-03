@@ -21,16 +21,12 @@ import { useAppSelector } from "@/redux/hook";
 import { motion } from "framer-motion";
 
 const Stack = () => {
-  const theme = useAppSelector((state) => state.themeReducer.mode);
-
   return (
     <>
       <h2
         data-section="stack"
         id="stack"
-        className={`text-3xl text-center mt-32 mb-24 ${
-          theme === "light" ? "text-black" : "text-white"
-        }`}
+        className="text-3xl text-center mt-32 mb-24 text-themed"
       >
         STACK
       </h2>

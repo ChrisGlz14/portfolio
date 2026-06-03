@@ -2,59 +2,173 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ── Variables de tema (hex) ──────────────────────── */
+.light {
+  --text-primary:   #111111;
+  --bg-primary:     #fdf4e3;
+  --nav-bg:         #ea580c47;
+  --nav-shadow-a:   #ea580c40;
+  --nav-inset:      #ffffff33;
+  --nav-border:     #ffffff26;
+  --link-color:     #111111;
+  --link-hover:     #111111;
+  --link-glow:      #ffffffb3;
+  --link-line-from: #ffffff;
+  --link-line-to:   #ffffff99;
+  --card-bg:        #ffffffa6;
+  --card-border:    #ea580c2e;
+  --card-shadow:    #ea580c33;
+  --card-hover-shadow: #ea580c40;
 
-
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+  background:
+    radial-gradient(ellipse at 15% 10%, #ffd59e 0%, transparent 45%),
+    radial-gradient(ellipse at 85% 85%, #ffe88a 0%, transparent 45%),
+    #fdf4e3;
+  color:       #111111;
+  min-height:  150px;
 }
 
-body .dark {
-  background:#1f1d2b;
-  
+.light.menu-abierto, 
+.dark.menu-abierto {
+  min-height: 450px;
 }
 
-body .light {
-  background-color: antiquewhite;
+.light.menu-cerrado,
+.dark.menu-cerrado {
+  min-height: 150px;
 }
 
+
+.dark {
+  --text-primary:   #e2e8f0;
+  --bg-primary:     #1a1625;
+  --nav-bg:         #0f0c1a80;
+  --nav-shadow-a:   #00000073;
+  --nav-inset:      #ffffff12;
+  --nav-border:     #ffffff1a;
+  --link-color:     #e2e8f0;
+  --link-hover:     #fde047;
+  --link-glow:      #fde0478c;
+  --link-line-from: #fde047;
+  --link-line-to:   #fb923c;
+  --card-bg:        #ffffff0f;
+  --card-border:    #ffffff1a;
+  --card-shadow:    #00000059;
+  --card-hover-shadow: #7c3aed4d;
+
+  background:
+    radial-gradient(ellipse at 20% 15%, #3b0f60 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 80%, #5c1a00 0%, transparent 50%),
+    #1a1625;
+  color:      #e2e8f0;
+  min-height:  150px;
+}
+
+/* ── Utilidad: texto temático ─────────────────────── */
+.text-themed {
+  color: var(--text-primary);
+}
+
+/* ── Tarjetas de repositorios ─────────────────────── */
+.repo-card {
+  position:        relative;
+  background:      var(--card-bg);
+  border:          1px solid var(--card-border);
+  border-radius:   14px;
+  box-shadow:      0 4px 20px var(--card-shadow);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  overflow:        hidden;
+  transition:      transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.repo-card::before {
+  content:    '';
+  position:   absolute;
+  top:        0;
+  left:       0;
+  right:      0;
+  height:     2px;
+  background: linear-gradient(90deg, #ea580c 0%, #7c3aed 100%);
+}
+
+.repo-card:hover {
+  transform:  translateY(-4px);
+  box-shadow: 0 14px 36px var(--card-hover-shadow);
+}
+
+.repo-card-title {
+  background:              linear-gradient(90deg, #ea580c 0%, #a855f7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip:         text;
+  font-weight:             700;
+}
+
+.repo-card-desc {
+  color:       var(--text-primary);
+  opacity:     0.75;
+  font-size:   0.875rem;
+  line-height: 1.6;
+}
+
+.repo-lang-badge {
+  display:        inline-block;
+  font-size:      0.68rem;
+  font-weight:    600;
+  letter-spacing: 0.05em;
+  padding:        2px 9px;
+  border-radius:  99px;
+  background:     #ea580c1f;
+  color:          #ea580c;
+  border:         1px solid #ea580c40;
+}
+
+.dark .repo-lang-badge {
+  background:   #7c3aed1f;
+  color:        #a78bfa;
+  border-color: #7c3aed40;
+}
+
+.repo-card-btn {
+  display:         inline-flex;
+  align-items:     center;
+  gap:             5px;
+  font-size:       0.78rem;
+  font-weight:     600;
+  padding:         4px 11px;
+  border-radius:   8px;
+  background:      #ea580c1a;
+  color:           #ea580c;
+  border:          1px solid #ea580c33;
+  text-decoration: none;
+  transition:      background 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.repo-card-btn:hover {
+  background:  #ea580c30;
+  transform:   translateX(2px);
+  box-shadow:  0 0 12px #ea580c26;
+}
+
+.dark .repo-card-btn {
+  background:   #7c3aed1a;
+  color:        #a78bfa;
+  border-color: #7c3aed33;
+}
+
+.dark .repo-card-btn:hover {
+  background:  #7c3aed30;
+  box-shadow:  0 0 12px #7c3aed26;
+}
+
+/* ── Scrollbar ────────────────────────────────────── */
+::-webkit-scrollbar       { width: 7px; opacity: 0.5; }
+::-webkit-scrollbar-thumb { background-color: #aeaeae99; border-radius: 100px; }
+::-webkit-scrollbar-thumb:hover { background-color: #aeaeae; }
+::-webkit-scrollbar-track { background-color: #484848; }
+
+/* ── Tailwind utilities ───────────────────────────── */
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
-
-
-/* Estilos generales de Tailwind */
-
-.switch.active::after {
-  right: 0;
-  left: auto;
-}
-
-.after-switch {
-  content: "";
-  /* Otros estilos para el pseudo-elemento después del switch */
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  opacity: 0.5;
-}
-
-::-webkit-scrollbar-thumb {
-  background-color: rgba(174, 174, 174, 0.6);
-  border-radius: 100px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(174, 174, 174, 1);
-}
-
-::-webkit-scrollbar-track {
-  background-color: #484848;
+  .text-balance { text-wrap: balance; }
 }
