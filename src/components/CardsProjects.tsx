@@ -50,7 +50,7 @@ const CardsProjects: React.FC<CardsProjectsProps> = ({
   };
 
   return (
-    <div className="card-glass proyectos-container flex flex-col lg:flex-row mx-auto w-[300px] lg:w-[1033px] h-auto justify-center mt-10 sm:mt-14">
+    <div className="card-glass proyectos-container flex flex-col lg:flex-row mx-auto w-[350px] lg:w-[1033px] h-auto justify-center mt-10 sm:mt-14">
 
       {/* Imagen del proyecto */}
       <div className="container-img flex justify-center items-center">
