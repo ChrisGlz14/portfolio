@@ -22,7 +22,7 @@ export const Header = () => {
   return (
     <>
       <nav
-        className={`nav-glass ${theme} flex items-center pb-0 justify-between flex-wrap pr-4 ${menu ? 'pb-14 lg:pb-0 min-h-screen' : 'menu-abierto'}`}
+        className={`nav-glass ${theme} flex items-center pb-0 justify-between flex-wrap pr-4 ${menu ? ' lg:pb-0 min-h-screen' : 'menu-abierto'}`}
       >
         <div className="flex items-center flex-shrink-0 mr-6">
           <div className="logo">
