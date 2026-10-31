@@ -3,6 +3,37 @@
 ## Introducción
 Este repositorio contiene el código fuente y los recursos utilizados para construir mi portfolio de desarrollo.
 
+## Editar la línea temporal
+
+La sección **Experiencia profesional** se alimenta del array `experience.entries` en estos archivos:
+
+- `src/app/lib/languages/es.json`: contenido en español.
+- `src/app/lib/languages/en.json`: contenido en inglés.
+
+Los cinco hitos iniciales retoman formación y proyectos ya mencionados en el portfolio. Los períodos quedaron como **Período por completar** para que agregues tus fechas reales. Revisá también el orden: las entradas se muestran en el mismo orden del array, sin ordenar automáticamente por fecha.
+
+Cada entrada tiene estos campos:
+
+| Campo | Contenido |
+| --- | --- |
+| `id` | Identificador único y estable, igual en ambos idiomas. |
+| `period` | Fecha o período que querés mostrar. |
+| `role` | Puesto, actividad o etapa de formación. |
+| `organization` | Empresa, institución o proyecto. |
+| `description` | Resumen de tu aporte, aprendizaje o logros. |
+| `technologies` | Lista de tecnologías y herramientas. |
+| `kind` | Tipo de ícono: `learning`, `code`, `design` o `work`. |
+
+Para agregar un hito, duplicá un objeto completo dentro de `entries`, asignale un `id` nuevo y completá sus datos en ambos idiomas. Podés quitar o reordenar entradas sin cambiar el componente. Los títulos de sección se editan en `experience`; el título profesional de la presentación, en `profile.role`.
+
+La sección conserva los temas claro y oscuro. El fondo decorativo de Three.js está separado en `src/components/ExperienceScene.tsx`: se carga cerca de la sección, pausa fuera de vista y respeta la preferencia de movimiento reducido. El contenido sigue disponible si el navegador no admite WebGL. Los estilos de la línea temporal están en `src/app/styles/experience.css`.
+
+## Botón de volver arriba en 3D
+
+`src/components/BtnUp.tsx` controla la aparición del botón al superar los 400 px, el progreso de lectura y el regreso al inicio. El giroscopio de Three.js está en `src/components/BackToTopScene.tsx`; sus tamaños, halo y versión móvil se ajustan en `src/app/styles/back-to-top.css`.
+
+La flecha tiene volumen, los aros reaccionan al cursor y el clic activa una onda expansiva. El efecto se pausa cuando el botón o la pestaña están ocultos. Si el usuario prefiere movimiento reducido o WebGL no está disponible, se muestra una flecha estática que mantiene la misma función.
+
 ## Agradecimientos
 Quiero expresar mi profundo agradecimiento a Miguel Ángel Durán García (Midudev) y Gonzalo Pozzo (Goncy) por su invaluable conocimiento que transmiten día a día. Son responsables de mi aprendizaje y forman parte de mi camino como desarrollador. ¡Muchas gracias, chicos!
 

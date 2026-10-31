@@ -7,7 +7,8 @@ import { toggleMode } from "@/redux/features/themeSlice";
 import { setEn, setEs } from "@/redux/features/langSlice";
 import { toggleMenu } from "@/redux/features/menuBurgerSlice";
 import { useAppDispatch, useAppSelector } from "@/redux/hook";
-import { scrollHome, scrollProjects, scrollRepos, scrollStack } from "../app/scroll-functions/scrolls";
+import { scrollHome, scrollExperience, scrollProjects, scrollRepos, scrollStack } from "../app/scroll-functions/scrolls";
+import type { MouseEvent } from "react";
 import * as dataEn from "../app/lib/languages/en.json";
 import * as dataEs from "../app/lib/languages/es.json";
 
@@ -18,11 +19,20 @@ export const Header = () => {
   const menu = useAppSelector((state) => state.menuBurgerReducer.mode);
   const dispatch = useAppDispatch();
   const data = language === "es" ? dataEs : dataEn;
+  const menuOpen = menu !== "hidden";
+
+  const navigateTo = (event: MouseEvent<HTMLAnchorElement>, scroll: () => void) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    if (menuOpen) dispatch(toggleMenu());
+    // Medir la sección después de que el menú móvil se haya cerrado.
+    requestAnimationFrame(scroll);
+  };
 
   return (
     <>
       <nav
-        className={`nav-glass ${theme} flex items-center pb-0 justify-between flex-wrap pr-4 ${menu ? ' lg:pb-0 min-h-screen' : 'menu-abierto'}`}
+        className={`nav-glass ${theme} flex items-center justify-between flex-wrap pr-4 ${menuOpen ? "pb-6 lg:pb-0" : "pb-0"}`}
       >
         <div className="flex items-center flex-shrink-0 mr-6">
           <div className="logo">
@@ -34,6 +44,10 @@ export const Header = () => {
           <button
             onClick={() => dispatch(toggleMenu())}
             id="boton"
+            type="button"
+            aria-expanded={menuOpen}
+            aria-controls="menu"
+            aria-label={language === "es" ? "Menú de navegación" : "Navigation menu"}
             className="burger-btn flex items-center px-3 py-2 border rounded"
           >
             <svg
@@ -49,29 +63,34 @@ export const Header = () => {
 
         <div
           id="menu"
-          className={`w-full block flex-grow lg:flex lg:items-center lg:w-auto text-center ${
-            menu === "hidden" ? "hidden" : ""
+          className={`w-full flex-grow lg:flex lg:items-center lg:w-auto text-center ${
+            menuOpen ? "block" : "hidden"
           }`}
         >
-          <div className="text-base lg:flex-grow">
-            <ul className="lg:flex gap-10 justify-center align-middle">
+          <div className="text-base lg:text-sm xl:text-base lg:flex-grow">
+            <ul className="lg:flex gap-5 xl:gap-10 justify-center items-center">
               <li className="mt-5 lg:mt-0">
-                <a href="#" className="links" id="nav-home" data-section="nav" data-value="home" onClick={() => scrollHome()}>
-                  Home
+                <a href="#home" className="links" id="nav-home" data-section="nav" data-value="home" onClick={(event) => navigateTo(event, scrollHome)}>
+                  {data.nav.home}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a href="#" className="links" id="nav-projects" data-section="nav" data-value="projects" onClick={() => scrollProjects()}>
+                <a href="#experience" className="links" id="nav-experience" data-section="nav" data-value="experience" onClick={(event) => navigateTo(event, scrollExperience)}>
+                  {data.nav.experience}
+                </a>
+              </li>
+              <li className="mt-5 lg:mt-0">
+                <a href="#projects" className="links" id="nav-projects" data-section="nav" data-value="projects" onClick={(event) => navigateTo(event, scrollProjects)}>
                   {data?.nav.projects}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a href="#" className="links" id="nav-repos" data-section="repositories" data-value="repositories" onClick={() => scrollRepos()}>
+                <a href="#repos" className="links" id="nav-repos" data-section="repositories" data-value="repositories" onClick={(event) => navigateTo(event, scrollRepos)}>
                   {data?.nav["repositories"]}
                 </a>
               </li>
               <li className="mt-5 lg:mt-0">
-                <a href="#" className="links" id="nav-stack" data-section="nav" data-value="stack" onClick={() => scrollStack()}>
+                <a href="#stack" className="links" id="nav-stack" data-section="nav" data-value="stack" onClick={(event) => navigateTo(event, scrollStack)}>
                   {data?.nav.stack}
                 </a>
               </li>

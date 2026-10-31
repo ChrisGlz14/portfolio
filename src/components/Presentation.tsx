@@ -48,6 +48,15 @@ const Presentation = () => {
 
           <motion.p
             variants={fadeUp}
+            className="pres-role"
+            data-section="profile"
+            data-value="role"
+          >
+            {data.profile.role}
+          </motion.p>
+
+          <motion.p
+            variants={fadeUp}
             className="pres-bio text-themed"
             data-section="profile"
             data-value="presentation"

@@ -1,0 +1,174 @@
+.up-orb-dock {
+  --orb-size: 124px;
+  --orb-accent: #ea580c;
+  position: fixed;
+  z-index: 40;
+  right: max(22px, env(safe-area-inset-right));
+  bottom: max(22px, env(safe-area-inset-bottom));
+  width: var(--orb-size);
+  height: var(--orb-size);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(28px) scale(0.65);
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), visibility 0.3s;
+}
+
+.dark .up-orb-dock { --orb-accent: #fb923c; }
+
+.up-orb-dock.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+}
+
+.up-orb-button {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.is-visible .up-orb-button { pointer-events: auto; }
+.up-orb-button:disabled { pointer-events: none; cursor: default; }
+
+.up-orb-button:focus-visible {
+  outline: 2px solid var(--orb-accent);
+  outline-offset: 3px;
+}
+
+.up-orb-visual {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+.up-orb-button:active .up-orb-visual { transform: scale(0.94); }
+
+.up-orb-aura {
+  position: absolute;
+  inset: 24%;
+  border-radius: 50%;
+  background: radial-gradient(circle at 35% 35%, #ea580c55, #7c3aed33 60%, transparent 75%);
+  box-shadow: 0 0 22px #ea580c30, 0 0 38px #7c3aed25;
+  filter: blur(9px);
+  opacity: 0.75;
+  transition: transform 0.4s ease, opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+.dark .up-orb-aura {
+  background: radial-gradient(circle at 35% 35%, #fb923c66, #a855f755 60%, transparent 75%);
+  box-shadow: 0 0 24px #ea580c45, 0 0 44px #7c3aed50;
+}
+
+.up-orb-button:focus-visible .up-orb-aura { opacity: 1; transform: scale(1.25); }
+
+.up-orb-progress {
+  position: absolute;
+  inset: 6%;
+  width: 88%;
+  height: 88%;
+  transform: rotate(-90deg);
+  stroke-width: 1;
+}
+
+.up-orb-progress-track { stroke: #7c3aed25; }
+.dark .up-orb-progress-track { stroke: #a855f733; }
+.up-orb-progress-value { stroke: var(--orb-accent); stroke-linecap: round; opacity: 0.7; }
+
+.up-orb-scene {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.up-orb-scene canvas { display: block; width: 100%; height: 100%; }
+
+.up-orb-fallback {
+  position: absolute;
+  inset: 27%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid #ffffff88;
+  background: linear-gradient(145deg, #fb923c 0%, #ea580c 32%, #7c3aed 90%);
+  box-shadow: inset 0 2px 5px #ffffff80, inset 0 -5px 8px #27113e80, 0 8px 18px #7c3aed40;
+  color: #fff;
+  opacity: 1;
+}
+
+.up-orb-fallback svg {
+  width: 58%;
+  height: 58%;
+  stroke-width: 2.6;
+  filter: drop-shadow(0 2px 2px #4c050060);
+}
+
+.up-orb-scene[data-ready="true"] + .up-orb-fallback { opacity: 0; }
+
+.up-orb-tooltip {
+  position: absolute;
+  top: 50%;
+  right: calc(100% - 4px);
+  padding: 7px 12px;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  background: var(--bg-primary);
+  box-shadow: 0 4px 18px var(--card-shadow);
+  color: var(--text-primary);
+  font-size: 0.72rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translate(8px, -50%);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.up-orb-button:focus-visible .up-orb-tooltip { opacity: 1; transform: translate(0, -50%); }
+
+@media (hover: hover) {
+  .up-orb-button:hover .up-orb-aura {
+    opacity: 1;
+    transform: scale(1.25);
+    box-shadow: 0 0 28px #ea580c60, 0 0 50px #7c3aed45;
+  }
+  .up-orb-button:hover .up-orb-tooltip { opacity: 1; transform: translate(0, -50%); }
+}
+
+.up-orb-dock.is-launching .up-orb-aura { animation: up-orb-flare 0.8s ease-out; }
+
+@keyframes up-orb-flare {
+  0% { transform: scale(0.8); opacity: 0.7; }
+  25% { transform: scale(1.8); opacity: 1; }
+  100% { transform: scale(1); opacity: 0.5; }
+}
+
+@media (max-width: 640px) {
+  .up-orb-dock {
+    --orb-size: 96px;
+    right: max(10px, env(safe-area-inset-right));
+    bottom: max(12px, env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .up-orb-dock, .up-orb-visual, .up-orb-aura, .up-orb-tooltip { transition: none; }
+  .up-orb-dock { transform: none; }
+  .up-orb-dock.is-launching .up-orb-aura { animation: none; }
+  .up-orb-scene { display: none; }
+  .up-orb-scene[data-ready="true"] + .up-orb-fallback { opacity: 1; }
+}

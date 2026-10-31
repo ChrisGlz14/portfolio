@@ -2,6 +2,7 @@
 import BtnUp from "@/components/BtnUp";
 import { Header } from "@/components/Header";
 import Presentation from "@/components/Presentation";
+import Experience from "@/components/Experience";
 import Proyectos from "@/components/Proyectos";
 import Repos from "@/components/Repos";
 import Stack from "@/components/Stack";
@@ -14,6 +15,7 @@ export default function Home() {
     <main className={theme}>
       <Header />
       <Presentation />
+      <Experience />
       <Proyectos />
       <Repos />
       <Stack />

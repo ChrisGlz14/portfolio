@@ -1,6 +1,7 @@
 {
   "nav" : {
     "home": "Inicio",
+    "experience": "Experiencia",
     "projects": "Proyectos",
     "repositories": "Repositorios",
     "about-me": "Sobre Mi",
@@ -8,7 +9,8 @@
   },
 "profile": {
   "presentation-name" : "Hola! Mi nombre es",
-  "presentation" : "Desarrollador de software en formación con experiencia en React, Next.js y Node.js, enfocado en convertirme en desarrollador full-stack.",
+  "role": "Desarrollador Full Stack & de Agentes de IA",
+  "presentation" : "Desarrollador de software en formación con experiencia en React, Next.js y Node.js, orientado al desarrollo full stack y con interés en la creación de agentes de IA.",
   "cvBtn" : "Descargar CV",
   "contactBtn" : "Contactame Por Mail Aquí!" ,
   "about-me-title" : "SOBRE MI",
@@ -18,6 +20,60 @@
 
 
 
+  },
+  "experience": {
+    "eyebrow": "MI RECORRIDO",
+    "title": "Experiencia profesional",
+    "intro": "Proyectos, formación y trabajo en equipo que van dando forma a mi camino como desarrollador.",
+    "milestonesLabel": "hitos en mi recorrido",
+    "technologiesLabel": "Tecnologías y herramientas",
+    "entries": [
+      {
+        "id": "full-stack-learning",
+        "period": "Período por completar",
+        "role": "Formación en desarrollo Full Stack",
+        "organization": "UTN · Formación y proyectos personales",
+        "description": "Estudiante avanzado de la Tecnicatura en Tecnologías de la Información. Amplío mis conocimientos en desarrollo web con React, Next.js, Node.js y bases de datos SQL y NoSQL.",
+        "technologies": ["React", "Next.js", "Node.js", "SQL"],
+        "kind": "learning"
+      },
+      {
+        "id": "nike-ecommerce",
+        "period": "Período por completar",
+        "role": "Desarrollo Frontend",
+        "organization": "Nike E-commerce · Proyecto personal",
+        "description": "Desarrollo de una tienda online de práctica para mejorar el diseño de interfaces y afianzar el uso de React, Next.js y Tailwind CSS.",
+        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+        "kind": "code"
+      },
+      {
+        "id": "stock-desktop",
+        "period": "Período por completar",
+        "role": "Desarrollo de software de gestión",
+        "organization": "Aplicación de escritorio para stock",
+        "description": "Creación de una aplicación para registrar productos, controlar inventario y consultar movimientos. Interfaz con WinForms y conexión a una base de datos SQL Server.",
+        "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
+        "kind": "code"
+      },
+      {
+        "id": "inside-coaching",
+        "period": "Período por completar",
+        "role": "Diseño UI/UX y desarrollo web",
+        "organization": "Inside Coaching · Equipo Tic's con Alas",
+        "description": "Diseño y desarrollo de una landing page para una academia de coaching junto al equipo de Alas Empresa Jr. Prototipado en Figma, implementación en WordPress y colaboración con metodología Scrum.",
+        "technologies": ["Figma", "WordPress", "HTML", "Scrum"],
+        "kind": "design"
+      },
+      {
+        "id": "alas-empresa-jr",
+        "period": "Período por completar",
+        "role": "Mantenimiento y desarrollo web",
+        "organization": "Alas Empresa Jr",
+        "description": "Mantenimiento y actualización del sitio de Alas junto a mis compañeros, acompañando las necesidades de empresas y pymes en su presencia digital.",
+        "technologies": ["WordPress", "HTML", "Trabajo en equipo"],
+        "kind": "work"
+      }
+    ]
   },
   "projects": {
 

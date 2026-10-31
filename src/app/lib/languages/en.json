@@ -1,6 +1,7 @@
 {
   "nav" : {
     "home": "Home",
+    "experience": "Experience",
     "projects": "Projects",
     "repositories": "Repositories",
     "about-me": "About me",
@@ -8,13 +9,68 @@
   },
   "profile": {
     "presentation-name" : "Hi! My name is",
-    "presentation": "Software developer in training with experience in React, Next.js, and Node.js, focused on becoming a full-stack developer.",
+    "role": "Full Stack & AI Agent Developer",
+    "presentation": "Software developer in training with experience in React, Next.js, and Node.js, focused on full-stack development and interested in building AI agents.",
     "cvBtn": "Download CV",
     "contactBtn": "Contact Me Via Email Here!",
     "about-me-title" : "ABOUT ME",
     "about-me": "Software developer in training, focused on web application development with JavaScript, React, and Next.js. Currently expanding my knowledge towards full-stack development, working with Node.js and SQL and NoSQL databases. Advanced student of the Information Technology Technician at UTN, with expected completion in 2026. I stand out for my continuous learning ability, adaptability, and commitment, with an interest in joining a team where I can contribute value and continue developing professionally.",
     "stack-title":"MY STACK",
     "projects-title" : "PROJECTS"
+  },
+  "experience": {
+    "eyebrow": "MY JOURNEY",
+    "title": "Professional experience",
+    "intro": "Projects, learning and teamwork that continue to shape my path as a developer.",
+    "milestonesLabel": "milestones along the way",
+    "technologiesLabel": "Technologies and tools",
+    "entries": [
+      {
+        "id": "full-stack-learning",
+        "period": "Period to complete",
+        "role": "Full Stack development training",
+        "organization": "UTN · Studies and personal projects",
+        "description": "Advanced Information Technology student. Expanding my web development skills with React, Next.js, Node.js, and SQL and NoSQL databases.",
+        "technologies": ["React", "Next.js", "Node.js", "SQL"],
+        "kind": "learning"
+      },
+      {
+        "id": "nike-ecommerce",
+        "period": "Period to complete",
+        "role": "Frontend development",
+        "organization": "Nike E-commerce · Personal project",
+        "description": "Developing a practice online store to improve interface design and strengthen my skills with React, Next.js and Tailwind CSS.",
+        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
+        "kind": "code"
+      },
+      {
+        "id": "stock-desktop",
+        "period": "Period to complete",
+        "role": "Management software development",
+        "organization": "Desktop inventory application",
+        "description": "Built an application to register products, manage inventory and track stock movements. Created a WinForms interface connected to a SQL Server database.",
+        "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
+        "kind": "code"
+      },
+      {
+        "id": "inside-coaching",
+        "period": "Period to complete",
+        "role": "UI/UX design and web development",
+        "organization": "Inside Coaching · Tic's con Alas team",
+        "description": "Designed and developed a landing page for a coaching academy with the Alas Empresa Jr team. Created Figma prototypes, implemented the site in WordPress and collaborated using Scrum.",
+        "technologies": ["Figma", "WordPress", "HTML", "Scrum"],
+        "kind": "design"
+      },
+      {
+        "id": "alas-empresa-jr",
+        "period": "Period to complete",
+        "role": "Website maintenance and development",
+        "organization": "Alas Empresa Jr",
+        "description": "Maintained and updated the Alas website alongside my teammates, supporting businesses and SMEs with their digital presence.",
+        "technologies": ["WordPress", "HTML", "Teamwork"],
+        "kind": "work"
+      }
+    ]
   },
   "projects": {
     "project-title1": "NIKE E-COMMERCE (DEVELOPING)",

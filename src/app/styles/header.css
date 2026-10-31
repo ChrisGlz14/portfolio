@@ -1,7 +1,7 @@
 /* ── Nav glassmorphism ────────────────────────────── */
 .nav-glass {
     position:   sticky;
-    height:     50px;
+    height:     auto;
     top:        0;
     z-index:    50;
     backdrop-filter: blur(18px);
@@ -10,12 +10,14 @@
 }
 
 .nav-glass.light {
+    min-height:    100px;
     background:    #ea580c2e;
     border-bottom: 1px solid #ffffff4d;
     box-shadow:    0 4px 28px #ea580c26, inset 0 1px 0 #ffffff33;
 }
 
 .nav-glass.dark {
+    min-height:    100px;
     background:    #0f172a80;
     border-bottom: 1px solid #ffffff1a;
     box-shadow:    0 4px 28px #00000059, inset 0 1px 0 #ffffff0f;
