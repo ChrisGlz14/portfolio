@@ -1,15 +1,7 @@
-/* ── Perspective base (existente) ─────────────────── */
-.container-img {
-    perspective: 500px;
-    transform: scale(1) rotateX(0deg) rotateY(0deg);
-}
-
-.reset-transform {
-    transform: inherit;
-}
-
 /* ── Glass card ───────────────────────────────────── */
 .card-glass {
+    --project-accent: #ea580c;
+    --project-secondary: #7c3aed;
     position:      relative;
     background:    var(--card-bg);
     border:        1px solid var(--card-border);
@@ -18,13 +10,123 @@
     backdrop-filter: blur(14px);
     -webkit-backdrop-filter: blur(14px);
     overflow:      hidden;
-    transition:    transform 0.35s ease, box-shadow 0.35s ease;
+    transition:    box-shadow 0.35s ease;
     padding:       20px;
 }
 
 .card-glass:hover {
-    transform:  translateY(-6px);
     box-shadow: 0 16px 40px var(--card-hover-shadow);
+}
+
+.dark .card-glass {
+    --project-accent: #fb923c;
+    --project-secondary: #c4b5fd;
+}
+
+/* El mismo hover de feature/cards, aplicado a las imágenes reales. */
+.project-image-container {
+    width: 100%;
+    min-width: 0;
+    padding: 8px;
+    margin-bottom: 24px;
+    align-self: center;
+}
+
+.project-image-stage {
+    position: relative;
+    perspective: 900px;
+    isolation: isolate;
+}
+
+.project-image-stage::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border: 2px solid var(--project-accent);
+    border-right-color: var(--project-secondary);
+    border-bottom-color: var(--project-secondary);
+    border-radius: 12px;
+    opacity: 0.35;
+    transform: translate(-7px, 7px) rotate(-1deg);
+    pointer-events: none;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 1), opacity 0.35s ease;
+}
+
+.project-image-surface {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    background: #171020;
+    box-shadow: 0 12px 25px #00000020;
+    transform: rotateX(0) rotateY(0);
+    backface-visibility: hidden;
+    transition: transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 1);
+}
+
+.project-image-surface::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background:
+        linear-gradient(120deg, #fb923c55, #ea580c12 45%, #7c3aed66),
+        linear-gradient(150deg, #ffffff30, transparent 45%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+}
+
+.project-image-surface .img-proyectos {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-image-link-icon {
+    position: absolute;
+    z-index: 1;
+    right: 12px;
+    bottom: 12px;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #ffffff40;
+    border-radius: 50%;
+    background: #171020cc;
+    color: #fff;
+    pointer-events: none;
+}
+
+.project-image-surface:focus-visible { outline: 2px solid var(--project-accent); outline-offset: 4px; }
+.project-image-stage:focus-within .project-image-surface { transform: translateY(-3px) rotateX(3deg) rotateY(-5deg); }
+.project-image-stage:focus-within .project-image-surface::after { opacity: 1; }
+.project-image-stage:focus-within::before { transform: translate(0, 0) rotate(0); opacity: 0.8; }
+
+@media (hover: hover) and (pointer: fine) {
+    .card-glass:hover .project-image-surface { transform: translateY(-3px) rotateX(3deg) rotateY(-5deg); }
+    .card-glass:hover .project-image-surface::after { opacity: 1; }
+    .card-glass:hover .project-image-stage::before { transform: translate(0, 0) rotate(0); opacity: 0.8; }
+}
+
+@media (min-width: 1024px) {
+    .project-image-container { width: 38%; flex-shrink: 0; margin-bottom: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .card-glass,
+    .project-image-surface,
+    .project-image-surface::after,
+    .project-image-stage::before { transition: none; }
+    .card-glass:hover .project-image-surface,
+    .project-image-stage:focus-within .project-image-surface,
+    .project-image-stage::before,
+    .card-glass:hover .project-image-stage::before,
+    .project-image-stage:focus-within::before { transform: none; }
 }
 
 /* Barra de acento izquierda */
