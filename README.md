@@ -30,9 +30,9 @@ La sección conserva los temas claro y oscuro. El fondo decorativo de Three.js e
 
 ## Botón de volver arriba en 3D
 
-`src/components/BtnUp.tsx` controla la aparición del botón al superar los 400 px, el progreso de lectura y el regreso al inicio. El giroscopio de Three.js está en `src/components/BackToTopScene.tsx`; sus tamaños, halo y versión móvil se ajustan en `src/app/styles/back-to-top.css`.
+`src/components/BtnUp.tsx` controla la aparición del botón al superar los 400 px y el regreso al inicio. La flecha biselada de Three.js está en `src/components/BackToTopScene.tsx`; su base de esquinas redondeadas y tamaños de 56 px (escritorio) y 48 px (móvil) se ajustan en `src/app/styles/back-to-top.css`.
 
-La flecha tiene volumen, los aros reaccionan al cursor y el clic activa una onda expansiva. El efecto se pausa cuando el botón o la pestaña están ocultos. Si el usuario prefiere movimiento reducido o WebGL no está disponible, se muestra una flecha estática que mantiene la misma función.
+La flecha tiene volumen y una inclinación leve que responde al cursor, sin aros, partículas ni animación continua. La escena se actualiza durante la interacción y deja de renderizar cuando alcanza su posición; también se pausa con el botón o la pestaña ocultos. Si el usuario prefiere movimiento reducido o WebGL no está disponible, se muestra una flecha estática que mantiene la misma función.
 
 ## Agradecimientos
 Quiero expresar mi profundo agradecimiento a Miguel Ángel Durán García (Midudev) y Gonzalo Pozzo (Goncy) por su invaluable conocimiento que transmiten día a día. Son responsables de mi aprendizaje y forman parte de mi camino como desarrollador. ¡Muchas gracias, chicos!
