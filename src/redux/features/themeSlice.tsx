@@ -7,8 +7,8 @@ interface ThemeState {
 }
 
 const initialState: ThemeState = {
-  mode: "light",
-  btnState: "light",
+  mode: "dark",
+  btnState: "dark",
 };
 
 
