@@ -51,16 +51,6 @@
         "kind": "learning"
       },
       {
-        "id": "stock-desktop",
-        "period": "Period to complete",
-        "role": "Management software development",
-        "organization": "Desktop inventory application",
-        "description": "Built an application to register products, manage inventory and track stock movements. Created a WinForms interface connected to a SQL Server database.",
-        "highlights": [],
-        "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
-        "kind": "code"
-      },
-      {
         "id": "inside-coaching",
         "period": "2023 – 2024 · During my time at Alas",
         "role": "UI/UX design and web development",

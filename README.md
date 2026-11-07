@@ -10,7 +10,7 @@ La sección **Experiencia profesional** se alimenta del array `experience.entrie
 - `src/app/lib/languages/es.json`: contenido en español.
 - `src/app/lib/languages/en.json`: contenido en inglés.
 
-Las entradas se muestran en el mismo orden del array, sin ordenar automáticamente por fecha. El período de la aplicación de stock queda como **Período por completar** hasta agregar las fechas reales.
+Las entradas se muestran en el mismo orden del array, sin ordenar automáticamente por fecha.
 
 Cada entrada tiene estos campos:
 

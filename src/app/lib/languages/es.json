@@ -54,16 +54,6 @@
         "kind": "learning"
       },
       {
-        "id": "stock-desktop",
-        "period": "Período por completar",
-        "role": "Desarrollo de software de gestión",
-        "organization": "Aplicación de escritorio para stock",
-        "description": "Creación de una aplicación para registrar productos, controlar inventario y consultar movimientos. Interfaz con WinForms y conexión a una base de datos SQL Server.",
-        "highlights": [],
-        "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
-        "kind": "code"
-      },
-      {
         "id": "inside-coaching",
         "period": "2023 – 2024 · Durante mi etapa en Alas",
         "role": "Diseño UI/UX y desarrollo web",
