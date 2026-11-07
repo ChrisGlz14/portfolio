@@ -68,7 +68,12 @@ export default function Experience() {
                 <article className="experience-card" aria-labelledby={`experience-${entry.id}`}>
                   <p className="experience-organization">{entry.organization}</p>
                   <h3 id={`experience-${entry.id}`}>{entry.role}</h3>
-                  <p className="experience-description">{entry.description}</p>
+                  {entry.description && <p className="experience-description">{entry.description}</p>}
+                  {entry.highlights.length > 0 && (
+                    <ul className="experience-highlights">
+                      {entry.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                    </ul>
+                  )}
                   <ul className="experience-technologies" aria-label={experience.technologiesLabel}>
                     {entry.technologies.map((technology) => (
                       <li key={technology}>{technology}</li>

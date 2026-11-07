@@ -10,7 +10,7 @@ La sección **Experiencia profesional** se alimenta del array `experience.entrie
 - `src/app/lib/languages/es.json`: contenido en español.
 - `src/app/lib/languages/en.json`: contenido en inglés.
 
-Los cinco hitos iniciales retoman formación y proyectos ya mencionados en el portfolio. Los períodos quedaron como **Período por completar** para que agregues tus fechas reales. Revisá también el orden: las entradas se muestran en el mismo orden del array, sin ordenar automáticamente por fecha.
+Las entradas se muestran en el mismo orden del array, sin ordenar automáticamente por fecha. El período de la aplicación de stock queda como **Período por completar** hasta agregar las fechas reales.
 
 Cada entrada tiene estos campos:
 
@@ -21,6 +21,7 @@ Cada entrada tiene estos campos:
 | `role` | Puesto, actividad o etapa de formación. |
 | `organization` | Empresa, institución o proyecto. |
 | `description` | Resumen de tu aporte, aprendizaje o logros. |
+| `highlights` | Lista de aportes o responsabilidades; puede quedar vacía. |
 | `technologies` | Lista de tecnologías y herramientas. |
 | `kind` | Tipo de ícono: `learning`, `code`, `design` o `work`. |
 

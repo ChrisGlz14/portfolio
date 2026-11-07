@@ -29,22 +29,29 @@
     "technologiesLabel": "Tecnologías y herramientas",
     "entries": [
       {
-        "id": "full-stack-learning",
-        "period": "Período por completar",
-        "role": "Formación en desarrollo Full Stack",
-        "organization": "UTN · Formación y proyectos personales",
-        "description": "Estudiante avanzado de la Tecnicatura en Tecnologías de la Información. Amplío mis conocimientos en desarrollo web con React, Next.js, Node.js y bases de datos SQL y NoSQL.",
-        "technologies": ["React", "Next.js", "Node.js", "SQL"],
-        "kind": "learning"
+        "id": "cipax",
+        "period": "2026",
+        "role": "Práctica Profesional Supervisada · Analista Programador / Desarrollador IA",
+        "organization": "CIPAX SRL",
+        "description": "",
+        "highlights": [
+          "Diseño arquitectónico y desarrollo de un asistente virtual jurídico basado en Inteligencia Artificial y orquestación de LLMs.",
+          "Implementación de un pipeline de anonimización y seudonimización de datos sensibles, integrando modelos de Hugging Face, spaCy y Microsoft Presidio.",
+          "Desarrollo de la arquitectura RAG para consulta normativa mediante indexación semántica en bases de datos vectoriales.",
+          "Despliegue, configuración y validación integral de servicios en entorno local para pruebas de inferencia y control de alucinaciones."
+        ],
+        "technologies": ["Python", "LLMs", "RAG", "Transformers", "Microsoft Presidio", "spaCy", "Vector DB"],
+        "kind": "work"
       },
       {
-        "id": "nike-ecommerce",
-        "period": "Período por completar",
-        "role": "Desarrollo Frontend",
-        "organization": "Nike E-commerce · Proyecto personal",
-        "description": "Desarrollo de una tienda online de práctica para mejorar el diseño de interfaces y afianzar el uso de React, Next.js y Tailwind CSS.",
-        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-        "kind": "code"
+        "id": "utn-education",
+        "period": "Agosto 2023 – fines de 2026 (previsto)",
+        "role": "Técnico Universitario en Tecnologías de la Información",
+        "organization": "Universidad Tecnológica Nacional · Formación académica",
+        "description": "Formación en bases de datos, arquitectura de sistemas, desarrollo de software y seguridad informática, con énfasis en el análisis y la resolución de problemas tecnológicos.",
+        "highlights": [],
+        "technologies": ["Bases de datos", "Arquitectura de sistemas", "Desarrollo de software", "Seguridad informática"],
+        "kind": "learning"
       },
       {
         "id": "stock-desktop",
@@ -52,24 +59,27 @@
         "role": "Desarrollo de software de gestión",
         "organization": "Aplicación de escritorio para stock",
         "description": "Creación de una aplicación para registrar productos, controlar inventario y consultar movimientos. Interfaz con WinForms y conexión a una base de datos SQL Server.",
+        "highlights": [],
         "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
         "kind": "code"
       },
       {
         "id": "inside-coaching",
-        "period": "Período por completar",
+        "period": "2023 – 2024 · Durante mi etapa en Alas",
         "role": "Diseño UI/UX y desarrollo web",
         "organization": "Inside Coaching · Equipo Tic's con Alas",
-        "description": "Diseño y desarrollo de una landing page para una academia de coaching junto al equipo de Alas Empresa Jr. Prototipado en Figma, implementación en WordPress y colaboración con metodología Scrum.",
+        "description": "Diseño y desarrollo de una landing page para una academia de coaching junto al equipo de Alas Empresa Jr. Participé en reuniones con el cliente para relevar y registrar sus requerimientos, además de colaborar en el prototipado en Figma y la implementación en WordPress con metodología Scrum.",
+        "highlights": [],
         "technologies": ["Figma", "WordPress", "HTML", "Scrum"],
         "kind": "design"
       },
       {
         "id": "alas-empresa-jr",
-        "period": "Período por completar",
+        "period": "Mayo 2023 – Mayo 2024",
         "role": "Mantenimiento y desarrollo web",
         "organization": "Alas Empresa Jr",
         "description": "Mantenimiento y actualización del sitio de Alas junto a mis compañeros, acompañando las necesidades de empresas y pymes en su presencia digital.",
+        "highlights": [],
         "technologies": ["WordPress", "HTML", "Trabajo en equipo"],
         "kind": "work"
       }

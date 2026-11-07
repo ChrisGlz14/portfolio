@@ -26,22 +26,29 @@
     "technologiesLabel": "Technologies and tools",
     "entries": [
       {
-        "id": "full-stack-learning",
-        "period": "Period to complete",
-        "role": "Full Stack development training",
-        "organization": "UTN · Studies and personal projects",
-        "description": "Advanced Information Technology student. Expanding my web development skills with React, Next.js, Node.js, and SQL and NoSQL databases.",
-        "technologies": ["React", "Next.js", "Node.js", "SQL"],
-        "kind": "learning"
+        "id": "cipax",
+        "period": "2026",
+        "role": "Supervised Professional Practice · Programmer Analyst / AI Developer",
+        "organization": "CIPAX SRL",
+        "description": "",
+        "highlights": [
+          "Designed and developed a legal virtual assistant using artificial intelligence and LLM orchestration.",
+          "Implemented a sensitive-data anonymization and pseudonymization pipeline integrating Hugging Face models, spaCy and Microsoft Presidio.",
+          "Developed a RAG architecture for regulatory research using semantic indexing in vector databases.",
+          "Deployed, configured and validated services in a local environment for inference testing and hallucination control."
+        ],
+        "technologies": ["Python", "LLMs", "RAG", "Transformers", "Microsoft Presidio", "spaCy", "Vector DB"],
+        "kind": "work"
       },
       {
-        "id": "nike-ecommerce",
-        "period": "Period to complete",
-        "role": "Frontend development",
-        "organization": "Nike E-commerce · Personal project",
-        "description": "Developing a practice online store to improve interface design and strengthen my skills with React, Next.js and Tailwind CSS.",
-        "technologies": ["React", "Next.js", "TypeScript", "Tailwind CSS"],
-        "kind": "code"
+        "id": "utn-education",
+        "period": "August 2023 – late 2026 (expected)",
+        "role": "University Technician in Information Technology",
+        "organization": "National Technological University · Education",
+        "description": "Studies in databases, systems architecture, software development and information security, focused on analyzing and solving technology problems.",
+        "highlights": [],
+        "technologies": ["Databases", "Systems architecture", "Software development", "Information security"],
+        "kind": "learning"
       },
       {
         "id": "stock-desktop",
@@ -49,24 +56,27 @@
         "role": "Management software development",
         "organization": "Desktop inventory application",
         "description": "Built an application to register products, manage inventory and track stock movements. Created a WinForms interface connected to a SQL Server database.",
+        "highlights": [],
         "technologies": ["C#", ".NET", "WinForms", "SQL Server"],
         "kind": "code"
       },
       {
         "id": "inside-coaching",
-        "period": "Period to complete",
+        "period": "2023 – 2024 · During my time at Alas",
         "role": "UI/UX design and web development",
         "organization": "Inside Coaching · Tic's con Alas team",
-        "description": "Designed and developed a landing page for a coaching academy with the Alas Empresa Jr team. Created Figma prototypes, implemented the site in WordPress and collaborated using Scrum.",
+        "description": "Designed and developed a landing page for a coaching academy with the Alas Empresa Jr team. Took part in client meetings to gather and document requirements, and collaborated on Figma prototypes and WordPress implementation using Scrum.",
+        "highlights": [],
         "technologies": ["Figma", "WordPress", "HTML", "Scrum"],
         "kind": "design"
       },
       {
         "id": "alas-empresa-jr",
-        "period": "Period to complete",
+        "period": "May 2023 – May 2024",
         "role": "Website maintenance and development",
         "organization": "Alas Empresa Jr",
         "description": "Maintained and updated the Alas website alongside my teammates, supporting businesses and SMEs with their digital presence.",
+        "highlights": [],
         "technologies": ["WordPress", "HTML", "Teamwork"],
         "kind": "work"
       }
